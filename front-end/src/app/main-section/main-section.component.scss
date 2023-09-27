@@ -1,0 +1,11 @@
+@use "../../utils/colors.scss";
+
+main {
+  color: colors.$white;
+
+  h1 {
+    position: relative;
+    z-index: 1;
+  }
+}
+

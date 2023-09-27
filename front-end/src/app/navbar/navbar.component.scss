@@ -1,3 +1,42 @@
-.container-fluid {
-  // background-color: red;
+@use "../../utils/colors.scss";
+
+.navbar {
+  padding: 0;
+  background-color: colors.$blue;
+  // border-bottom-left-radius: 8px;
+  // border-bottom-right-radius: 8px;
+  z-index: 1;
+  padding-bottom: 8px;
+
+  & > div {
+    margin-left: 32px;
+  }
+
+  h1 {
+    color: colors.$orange;
+    margin-bottom: 0;
+  }
 }
+
+
+.container-fluid {
+  // background-color: colors.$blue;
+  // border-bottom-left-radius: 8px;
+  // border-bottom-right-radius: 8px;
+
+  ul {
+    margin-left: 128px;
+  }
+}
+
+
+.nav-item {
+  padding: 8px;
+  font-weight: 500;
+  margin-right: 12px;
+
+  a {
+    color: colors.$white;
+  }
+}
+

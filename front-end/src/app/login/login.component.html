@@ -1,8 +1,5 @@
 <section>
   <form [formGroup]="formulario" (ngSubmit)="onSubmit()">
-    <!-- <app-input-field inputName="email" inputType="text" inputForId="email" inputLabel="Email:"></app-input-field>
-    <app-input-field inputName="password" inputType="password" inputForId="password"
-      inputLabel="Senha:"></app-input-field> -->
     <div class="mb-3">
       <label for="email" class="form-label">Email:</label>
       <input formControlName="email" type="text" class="form-control" id="email">
@@ -11,7 +8,7 @@
       <label for="password" class="form-label">Senha:</label>
       <input formControlName="password" type="password" class="form-control" id="password">
     </div>
-    <button type="submit" class="btn btn-primary">Login</button>
-    <p>Ainda não possui uma conta? <a routerLink="/cadastro">Clique aqui</a> para criar.</p>
+    <button type="submit" class="btn btn-primary mt-2">Login</button>
+    <p class="mt-3">Ainda não possui uma conta? <a routerLink="/cadastro">Clique aqui</a> para criar.</p>
   </form>
 </section>

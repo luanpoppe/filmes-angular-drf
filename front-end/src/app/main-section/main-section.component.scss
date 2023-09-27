@@ -2,10 +2,41 @@
 
 main {
   color: colors.$white;
+  position: relative;
+  z-index: 1;
 
-  h1 {
-    position: relative;
-    z-index: 1;
+  .initial-features ul {
+    margin-top: 200px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    // justify-content: center;
+
+    li {
+      max-width: 75%;
+      font-weight: 600;
+      text-align: center;
+      margin-bottom: 8px;
+    }
+  }
+
+  .button-signup {
+    text-decoration: none;
+    padding-bottom: 80px;
+
+    button {
+      display: block;
+      margin: 0 auto;
+      color: colors.$blue;
+      background-color: colors.$orange;
+      padding: .625em 1.5em;
+      border: none;
+      border-radius: 3px;
+      font-weight: 600;
+    }
   }
 }
+
+
 

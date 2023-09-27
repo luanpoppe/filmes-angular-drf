@@ -8,6 +8,7 @@ import { MainSectionComponent } from './main-section/main-section.component';
 import { LoginComponent } from './login/login.component';
 import { NewUserComponent } from './new-user/new-user.component';
 import { InputFieldComponent } from './input-field/input-field.component';
+import { ReactiveFormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
@@ -16,13 +17,10 @@ import { InputFieldComponent } from './input-field/input-field.component';
     MainSectionComponent,
     LoginComponent,
     NewUserComponent,
-    InputFieldComponent
+    InputFieldComponent,
   ],
-  imports: [
-    BrowserModule,
-    AppRoutingModule
-  ],
+  imports: [BrowserModule, AppRoutingModule, ReactiveFormsModule],
   providers: [],
-  bootstrap: [AppComponent]
+  bootstrap: [AppComponent],
 })
-export class AppModule { }
+export class AppModule {}

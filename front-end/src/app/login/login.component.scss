@@ -1,0 +1,12 @@
+@use "../../utils/colors.scss";
+
+section {
+  position: relative;
+  color: colors.$white;
+  z-index: 1;
+  flex-direction: column;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 80vh;
+}

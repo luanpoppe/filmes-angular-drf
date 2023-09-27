@@ -1,1 +1,9 @@
-<p>login works!</p>
+<section>
+  <form [formGroup]="formulario" (ngSubmit)="onSubmit()">
+    <app-input-field inputName="email" inputType="text" inputForId="email" inputLabel="Email:"></app-input-field>
+    <app-input-field inputName="password" inputType="password" inputForId="password"
+      inputLabel="Senha:"></app-input-field>
+    <button type="submit" class="btn btn-primary">Login</button>
+    <p>Ainda não possui uma conta? <a routerLink="/cadastro">Clique aqui</a> para criar.</p>
+  </form>
+</section>

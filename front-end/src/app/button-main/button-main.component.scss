@@ -1,0 +1,12 @@
+@use "../../utils/colors.scss";
+
+.btn-primary {
+  background-color: colors.$blue;
+  color: colors.$orange;
+  border: none;
+  padding: 12px;
+  font-weight: 500;
+  margin-top: 4px;
+  min-width: 100px;
+  // font-size: 120%;
+}

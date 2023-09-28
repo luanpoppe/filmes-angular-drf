@@ -1,0 +1,13 @@
+@use "colors.scss";
+
+@mixin section-title() {
+  background-color: darken(colors.$blue, 24);
+  // opacity: 0.92;
+  width: 60%;
+  padding: 80px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border-radius: 8px;
+}

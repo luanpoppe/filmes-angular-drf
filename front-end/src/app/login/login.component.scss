@@ -1,4 +1,5 @@
 @use "../../utils/colors.scss";
+@use "../../utils/mixins.scss";
 
 section {
   position: relative;
@@ -9,4 +10,8 @@ section {
   justify-content: center;
   align-items: center;
   height: 80vh;
+
+  .login-container {
+    @include mixins.section-title()
+  }
 }

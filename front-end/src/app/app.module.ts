@@ -9,6 +9,7 @@ import { LoginComponent } from './login/login.component';
 import { NewUserComponent } from './new-user/new-user.component';
 import { ReactiveFormsModule } from '@angular/forms';
 import { ButtonMainComponent } from './button-main/button-main.component';
+import { SectionsTitleComponent } from './sections-title/sections-title.component';
 
 @NgModule({
   declarations: [
@@ -18,6 +19,7 @@ import { ButtonMainComponent } from './button-main/button-main.component';
     LoginComponent,
     NewUserComponent,
     ButtonMainComponent,
+    SectionsTitleComponent,
   ],
   imports: [BrowserModule, AppRoutingModule, ReactiveFormsModule],
   providers: [],

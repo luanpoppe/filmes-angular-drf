@@ -10,6 +10,7 @@ import { NewUserComponent } from './new-user/new-user.component';
 import { ReactiveFormsModule } from '@angular/forms';
 import { ButtonMainComponent } from './button-main/button-main.component';
 import { SectionsTitleComponent } from './sections-title/sections-title.component';
+import { HttpClientModule } from '@angular/common/http';
 
 @NgModule({
   declarations: [
@@ -21,7 +22,12 @@ import { SectionsTitleComponent } from './sections-title/sections-title.componen
     ButtonMainComponent,
     SectionsTitleComponent,
   ],
-  imports: [BrowserModule, AppRoutingModule, ReactiveFormsModule],
+  imports: [
+    BrowserModule,
+    AppRoutingModule,
+    ReactiveFormsModule,
+    HttpClientModule,
+  ],
   providers: [],
   bootstrap: [AppComponent],
 })

@@ -1,0 +1,12 @@
+@use "../../utils/colors.scss";
+
+section {
+  position: relative;
+  z-index: 1;
+  color: colors.$white;
+  margin-top: 40px;
+
+  app-sections-title {
+    text-align: center;
+  }
+}

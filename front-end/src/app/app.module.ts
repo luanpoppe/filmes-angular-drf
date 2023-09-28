@@ -11,6 +11,10 @@ import { ReactiveFormsModule } from '@angular/forms';
 import { ButtonMainComponent } from './button-main/button-main.component';
 import { SectionsTitleComponent } from './sections-title/sections-title.component';
 import { HttpClientModule } from '@angular/common/http';
+import { UserProfileComponent } from './user-profile/user-profile.component';
+import { GetMoviesService } from './shared/get-movies.service';
+import { MovieListComponent } from './movie-list/movie-list.component';
+import { SubTitlesComponent } from './sub-titles/sub-titles.component';
 
 @NgModule({
   declarations: [
@@ -21,6 +25,9 @@ import { HttpClientModule } from '@angular/common/http';
     NewUserComponent,
     ButtonMainComponent,
     SectionsTitleComponent,
+    UserProfileComponent,
+    MovieListComponent,
+    SubTitlesComponent,
   ],
   imports: [
     BrowserModule,
@@ -28,7 +35,7 @@ import { HttpClientModule } from '@angular/common/http';
     ReactiveFormsModule,
     HttpClientModule,
   ],
-  providers: [],
+  providers: [GetMoviesService],
   bootstrap: [AppComponent],
 })
 export class AppModule {}

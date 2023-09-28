@@ -1,0 +1,8 @@
+<ul>
+  <div class="upcoming-movies">
+    <li *ngFor="let filme of upcomingMovies">
+      <!-- <p>{{ filme.title }}</p> -->
+      <img src="{{ baseUrlImages }}/{{ filme.poster_path }}" alt="{{ filme.title }}">
+    </li>
+  </div>
+</ul>

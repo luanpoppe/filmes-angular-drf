@@ -4,12 +4,10 @@ import { Injectable } from '@angular/core';
 @Injectable({
   providedIn: 'root',
 })
-export class ServicoTesteService {
+export class GetUsersService {
   constructor(private http: HttpClient) {}
 
-  testeImdb() {
-    this.http
-      .get('https://imdb-api.com/en/API/Title/k_1234567/tt1832382')
-      .subscribe((res) => console.log(res));
+  getUsers() {
+    return this.http.get('http://localhost:3000/usuarios');
   }
 }

@@ -3,18 +3,25 @@
     <app-sections-title titleContent="Crie sua conta"></app-sections-title>
     <form [formGroup]="formulario" (ngSubmit)="onSubmit()">
       <div class="mb-3">
+        <label for="nome" class="form-label">Nome:</label>
+        <input placeholder="Digite seu nome completo" formControlName="nome" type="text" class="form-control" id="nome">
+      </div>
+      <div class="mb-3">
         <label for="email" class="form-label">Email:</label>
-        <input formControlName="email" type="text" class="form-control" id="email">
+        <input placeholder="Digite um email válido" formControlName="email" type="text" class="form-control" id="email">
       </div>
-      <div class="mb-3">
-        <label for="password" class="form-label">Senha:</label>
-        <input formControlName="password" type="password" class="form-control" id="password">
+      <div class="mb-3 d-flex justify-content-center gap-4">
+        <div>
+          <label for="password" class="form-label">Senha:</label>
+          <input placeholder="Crie sua senha" formControlName="password" type="password" class="form-control"
+            id="password">
+        </div>
+        <div>
+          <label for="passwordRepeat" class="form-label">Confirme a senha:</label>
+          <input placeholder="Repita a senha" formControlName="passwordRepeat" type="password" class="form-control"
+            id="passwordRepeat">
+        </div>
       </div>
-      <div class="mb-3">
-        <label for="passwordRepeat" class="form-label">Repita a senha:</label>
-        <input formControlName="passwordRepeat" type="passwordRepeat" class="form-control" id="passwordRepeat">
-      </div>
-      <!-- <button type="submit" class="btn btn-primary">Crie sua conta</button> -->
       <app-button-main buttonType="submit" buttonContent="Crie sua conta"></app-button-main>
     </form>
   </div>

@@ -1,3 +1,28 @@
 {
-  "trendingMovies": []
+  "usuarios": [
+    {
+      "id": 1,
+      "nome": "Usuario 1",
+      "email": "user1@email.com",
+      "password": "123"
+    },
+    {
+      "id": 2,
+      "nome": "Usuario 2",
+      "email": "user2@email.com",
+      "password": "123"
+    },
+    {
+      "id": 3,
+      "nome": "Usuario 3",
+      "email": "user3@email.com",
+      "password": "123"
+    },
+    {
+      "id": 4,
+      "nome": "Usuario 4",
+      "email": "user4@email.com",
+      "password": "123"
+    }
+  ]
 }

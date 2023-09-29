@@ -4,25 +4,132 @@
       "id": 1,
       "nome": "Usuario 1",
       "email": "user1@email.com",
-      "password": "123"
+      "password": "123",
+      "watchlist": []
     },
     {
       "id": 2,
       "nome": "Usuario 2",
       "email": "user2@email.com",
-      "password": "123"
+      "password": "123",
+      "watchlist": [
+        {
+          "adult": false,
+          "backdrop_path": "/iiXliCeykkzmJ0Eg9RYJ7F2CWSz.jpg",
+          "genre_ids": [
+            28,
+            9648,
+            53,
+            80
+          ],
+          "id": 762430,
+          "original_language": "en",
+          "original_title": "Retribution",
+          "overview": "Com seus filhos presos no banco de trás e uma bomba que explodirá se eles saírem do carro, um trajeto normal se torna um jogo distorcido de vida ou morte enquanto Matt Turner segue as instruções cada vez mais perigosas de um estranho em uma corrida contra o tempo para salvar sua  família.",
+          "popularity": 1484.504,
+          "poster_path": "/yd0iEtqAXseXQgKf9RjmMaPjUPG.jpg",
+          "release_date": "2023-08-23",
+          "title": "A Chamada",
+          "video": false,
+          "vote_average": 6.9,
+          "vote_count": 236
+        },
+        {
+          "adult": false,
+          "backdrop_path": "/waBWlJlMpyFb7STkFHfFvJKgwww.jpg",
+          "genre_ids": [
+            28,
+            18
+          ],
+          "id": 678512,
+          "original_language": "en",
+          "original_title": "Sound of Freedom",
+          "overview": "A história de Tim Ballard, um ex-agente do governo dos EUA, que largou seu emprego para dedicar sua vida a resgatar crianças de traficantes sexuais globais.",
+          "popularity": 566.855,
+          "poster_path": "/2BWhcrlPr6UvSJy5D044Ikq2QxH.jpg",
+          "release_date": "2023-07-03",
+          "title": "Som da Liberdade",
+          "video": false,
+          "vote_average": 8,
+          "vote_count": 494
+        },
+        {
+          "adult": false,
+          "backdrop_path": "/rMvPXy8PUjj1o8o1pzgQbdNCsvj.jpg",
+          "genre_ids": [
+            28,
+            12,
+            53
+          ],
+          "id": 299054,
+          "original_language": "en",
+          "original_title": "Expend4bles",
+          "overview": "Os Mercenários enfrentam um traficante de armas que comanda o poder de um enorme exército privado.",
+          "popularity": 460.286,
+          "poster_path": "/dQxlUkhKGILgq9jbVEe3WPaiW2q.jpg",
+          "release_date": "2023-09-15",
+          "title": "Os Mercenários 4",
+          "video": false,
+          "vote_average": 6.6,
+          "vote_count": 79
+        },
+        {
+          "adult": false,
+          "backdrop_path": "/iQcCAm8hKWZyUntqrvzyEGtXyJl.jpg",
+          "genre_ids": [
+            878,
+            28,
+            53
+          ],
+          "id": 670292,
+          "original_language": "en",
+          "original_title": "The Creator",
+          "overview": "Em meio a uma futura guerra entre a raça humana e as forças da inteligência artificial, Joshua, um endurecido ex-agente das forças especiais que lamenta o desaparecimento de sua esposa, é recrutado para caçar e matar o Criador, o indescritível arquiteto da IA avançada que desenvolveu uma arma misteriosa com o poder de acabar com a guerra - e a própria humanidade.",
+          "popularity": 371.899,
+          "poster_path": "/187OBBT5oMQ2XPXgx9F8JhlycvK.jpg",
+          "release_date": "2023-09-27",
+          "title": "Resistência",
+          "video": false,
+          "vote_average": 7.7,
+          "vote_count": 34
+        }
+      ]
     },
     {
       "id": 3,
       "nome": "Usuario 3",
       "email": "user3@email.com",
-      "password": "123"
+      "password": "123",
+      "watchlist": [
+        {
+          "adult": false,
+          "backdrop_path": "/iiXliCeykkzmJ0Eg9RYJ7F2CWSz.jpg",
+          "genre_ids": [
+            28,
+            9648,
+            53,
+            80
+          ],
+          "id": 762430,
+          "original_language": "en",
+          "original_title": "Retribution",
+          "overview": "Com seus filhos presos no banco de trás e uma bomba que explodirá se eles saírem do carro, um trajeto normal se torna um jogo distorcido de vida ou morte enquanto Matt Turner segue as instruções cada vez mais perigosas de um estranho em uma corrida contra o tempo para salvar sua  família.",
+          "popularity": 1484.504,
+          "poster_path": "/yd0iEtqAXseXQgKf9RjmMaPjUPG.jpg",
+          "release_date": "2023-08-23",
+          "title": "A Chamada",
+          "video": false,
+          "vote_average": 6.9,
+          "vote_count": 236
+        }
+      ]
     },
     {
       "id": 4,
       "nome": "Usuario 4",
       "email": "user4@email.com",
-      "password": "123"
+      "password": "123",
+      "watchlist": []
     }
   ]
 }

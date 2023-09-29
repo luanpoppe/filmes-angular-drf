@@ -3,4 +3,5 @@ export interface NewUserType {
   nome: string;
   email: string;
   password: string;
+  watchlist?: any[];
 }

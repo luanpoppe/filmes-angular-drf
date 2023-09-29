@@ -1,10 +1,11 @@
 <div class="movie-list-background">
-  <app-sub-titles content="Próximas estreias" class="text-center"></app-sub-titles>
+  <app-sub-titles [content]="listTite" class="text-center"></app-sub-titles>
   <ul>
     <div class="upcoming-movies">
-      <li *ngFor="let filme of upcomingMovies">
-        <!-- <p>{{ filme.title }}</p> -->
-        <img src="{{ baseUrlImages }}/{{ filme.poster_path }}" alt="{{ filme.title }}">
+      <li *ngFor="let movie of (isUpcomingMovies ? upcomingMovies : isWatchlistMovies ? watchlistMovies : []) ">
+        <img src="{{ baseUrlImages }}/{{ movie.poster_path }}" alt="{{ movie.title }}">
+        <button (click)="addToWatchlist(movie)" type="button" *ngIf="!isWatchlist" class="add-watchlist">+
+          Watchlist</button>
       </li>
     </div>
   </ul>

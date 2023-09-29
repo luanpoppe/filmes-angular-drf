@@ -1,6 +1,7 @@
 import { HttpClient, HttpHeaders } from '@angular/common/http';
 import { Injectable } from '@angular/core';
-import { Observable, map, tap } from 'rxjs';
+import { Observable, filter, map, tap } from 'rxjs';
+import { NewUserType } from 'src/utils/new-user-type';
 
 @Injectable({
   providedIn: 'root',
@@ -27,5 +28,9 @@ export class GetMoviesService {
     return this.http.get('https://api.themoviedb.org/3/configuration', {
       headers: this.headers,
     });
+  }
+
+  getUserWatchlist() {
+    return this.http.get('http://localhost:3000/usuarios');
   }
 }

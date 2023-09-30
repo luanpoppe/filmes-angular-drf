@@ -1,0 +1,10 @@
+<div class="movie-list-background">
+  <app-sub-titles [content]="listTite" class="text-center"></app-sub-titles>
+  <ul>
+    <div class="upcoming-movies">
+      <li *ngFor="let movie of favoriteMovies ">
+        <img src="{{ baseUrlImages }}/{{ movie.poster_path }}" alt="{{ movie.title }}">
+        <button (click)="removeFromFavorites(movie)" type="button" class="add-watchlist">-
+          Favoritos</button>
+      </li>
+    </div>

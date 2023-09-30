@@ -4,6 +4,7 @@ import { ActivatedRoute } from '@angular/router';
 import { GetUsersService } from '../shared/get-users.service';
 import { NewUserType } from 'src/utils/new-user-type';
 import { AddMoviesService } from '../shared/add-movies.service';
+import { GetMoviesService } from '../shared/get-movies.service';
 
 @Component({
   selector: 'app-user-profile',
@@ -12,13 +13,15 @@ import { AddMoviesService } from '../shared/add-movies.service';
 })
 export class UserProfileComponent implements OnInit {
   allUsers!: NewUserType[];
-  @Input() currentUser!: NewUserType;
+  currentUser!: NewUserType;
   id!: any;
+  watchlistMovies!: any;
 
   constructor(
     private route: ActivatedRoute,
     private service: GetUsersService,
-    private serviceAddMovies: AddMoviesService
+    private serviceAddMovies: AddMoviesService,
+    private serviceGetMovies: GetMoviesService
   ) {}
 
   ngOnInit(): void {
@@ -35,9 +38,21 @@ export class UserProfileComponent implements OnInit {
     });
   }
 
-  addMovieInWatchlist(filme: any) {
-    this.currentUser.watchlist?.push(filme);
-    this.serviceAddMovies.addToWatchlist(this.currentUser, this.id).subscribe();
+  getUserWatchlist() {
+    this.serviceGetMovies.getUserWatchlist(this.id).subscribe();
+  }
+
+  addMovieInWatchlist(movie: any) {
+    this.currentUser.watchlist?.push(movie);
+
+    this.serviceAddMovies.addMovie(this.currentUser, this.id).subscribe();
+    console.log(this.currentUser);
+  }
+
+  addMovieInFavorites(movie: any) {
+    this.currentUser.favorites?.push(movie);
+
+    this.serviceAddMovies.addMovie(this.currentUser, this.id).subscribe();
     console.log(this.currentUser);
   }
 }

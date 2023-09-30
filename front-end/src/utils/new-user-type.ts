@@ -4,4 +4,5 @@ export interface NewUserType {
   email: string;
   password: string;
   watchlist?: any[];
+  favorites?: any[];
 }

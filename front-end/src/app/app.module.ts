@@ -13,8 +13,10 @@ import { SectionsTitleComponent } from './sections-title/sections-title.componen
 import { HttpClientModule } from '@angular/common/http';
 import { UserProfileComponent } from './user-profile/user-profile.component';
 import { GetMoviesService } from './shared/get-movies.service';
-import { MovieListComponent } from './movie-list/movie-list.component';
 import { SubTitlesComponent } from './sub-titles/sub-titles.component';
+import { UpcomingMoviesComponent } from './movie-list/upcoming-movies/upcoming-movies.component';
+import { WatchlistMoviesComponent } from './movie-list/watchlist-movies/watchlist-movies.component';
+import { FavoriteMoviesComponent } from './movie-list/favorite-movies/favorite-movies.component';
 
 @NgModule({
   declarations: [
@@ -26,8 +28,10 @@ import { SubTitlesComponent } from './sub-titles/sub-titles.component';
     ButtonMainComponent,
     SectionsTitleComponent,
     UserProfileComponent,
-    MovieListComponent,
     SubTitlesComponent,
+    UpcomingMoviesComponent,
+    WatchlistMoviesComponent,
+    FavoriteMoviesComponent,
   ],
   imports: [
     BrowserModule,

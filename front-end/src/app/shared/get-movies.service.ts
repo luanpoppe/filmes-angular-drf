@@ -7,6 +7,9 @@ import { NewUserType } from 'src/utils/new-user-type';
   providedIn: 'root',
 })
 export class GetMoviesService {
+  watchlistMovies: any;
+  favoritesMovies: any;
+
   constructor(private http: HttpClient) {}
 
   headers = new HttpHeaders({
@@ -30,7 +33,27 @@ export class GetMoviesService {
     });
   }
 
-  getUserWatchlist() {
-    return this.http.get('http://localhost:3000/usuarios');
+  getUserWatchlist(userId: any) {
+    return this.http.get('http://localhost:3000/usuarios').pipe(
+      map((data: any) => {
+        this.watchlistMovies = data.filter(
+          (user: any) => parseInt(userId) === user.id
+        )[0];
+        this.watchlistMovies = this.watchlistMovies.watchlist;
+        return this.watchlistMovies;
+      })
+    );
+  }
+
+  getUserFavorites(userId: any) {
+    return this.http.get('http://localhost:3000/usuarios').pipe(
+      map((data: any) => {
+        this.favoritesMovies = data.filter(
+          (user: any) => parseInt(userId) === user.id
+        )[0];
+        this.favoritesMovies = this.favoritesMovies.favorites;
+        return this.favoritesMovies;
+      })
+    );
   }
 }

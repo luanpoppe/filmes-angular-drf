@@ -5,6 +5,7 @@ import { GetMoviesService } from 'src/app/shared/get-movies.service';
 import { GetUsersService } from 'src/app/shared/get-users.service';
 import { RemoveMoviesService } from 'src/app/shared/remove-movies.service';
 import { NewUserType } from 'src/utils/new-user-type';
+import { UserProfileComponent } from 'src/app/user-profile/user-profile.component';
 
 @Component({
   selector: 'app-watchlist-movies',
@@ -23,7 +24,8 @@ export class WatchlistMoviesComponent implements OnInit {
     private route: ActivatedRoute,
     private service: GetMoviesService,
     private serviceRemoveMovies: RemoveMoviesService,
-    private serviceGetusers: GetUsersService
+    private serviceGetusers: GetUsersService,
+    private userProfileComponent: UserProfileComponent
   ) {}
 
   ngOnInit(): void {
@@ -54,5 +56,9 @@ export class WatchlistMoviesComponent implements OnInit {
     );
 
     this.serviceRemoveMovies.deleteMovie(this.currentUser, this.id).subscribe();
+  }
+
+  addToFavorites(filme: any) {
+    this.userProfileComponent.addMovieInFavorites(filme);
   }
 }

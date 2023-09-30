@@ -54,6 +54,26 @@
           "video": false,
           "vote_average": 6.6,
           "vote_count": 79
+        },
+        {
+          "adult": false,
+          "backdrop_path": "/9b3uxqcjkmay20EBZZj1KVow0r5.jpg",
+          "genre_ids": [
+            80,
+            27,
+            53
+          ],
+          "id": 951491,
+          "original_language": "en",
+          "original_title": "Saw X",
+          "overview": "Entre os eventos de “Jogos Mortais” e “Jogos Mortais II”, um doente e desesperado John Kramer viaja para o México para um arriscado e experimental procedimento médico na esperança de uma cura milagrosa para seu câncer — apenas para descobrir que toda a operação é uma farsa para fraudar os mais vulneráveis. Armado com um propósito recém-descoberto, o infame assassino em série retorna ao seu trabalho, virando a mesa contra os vigaristas em sua maneira visceral característica por meio de armadilhas tortuosas, perturbadas e engenhosas.",
+          "popularity": 346.198,
+          "poster_path": "/8s2gd1BZbWLSKEnvYsM8xusbjMl.jpg",
+          "release_date": "2023-09-26",
+          "title": "Jogos Mortais X",
+          "video": false,
+          "vote_average": 7.5,
+          "vote_count": 16
         }
       ],
       "favorites": [
@@ -76,6 +96,46 @@
           "video": false,
           "vote_average": 7.5,
           "vote_count": 16
+        },
+        {
+          "adult": false,
+          "backdrop_path": "/9b3uxqcjkmay20EBZZj1KVow0r5.jpg",
+          "genre_ids": [
+            80,
+            27,
+            53
+          ],
+          "id": 951491,
+          "original_language": "en",
+          "original_title": "Saw X",
+          "overview": "Entre os eventos de “Jogos Mortais” e “Jogos Mortais II”, um doente e desesperado John Kramer viaja para o México para um arriscado e experimental procedimento médico na esperança de uma cura milagrosa para seu câncer — apenas para descobrir que toda a operação é uma farsa para fraudar os mais vulneráveis. Armado com um propósito recém-descoberto, o infame assassino em série retorna ao seu trabalho, virando a mesa contra os vigaristas em sua maneira visceral característica por meio de armadilhas tortuosas, perturbadas e engenhosas.",
+          "popularity": 346.198,
+          "poster_path": "/8s2gd1BZbWLSKEnvYsM8xusbjMl.jpg",
+          "release_date": "2023-09-26",
+          "title": "Jogos Mortais X",
+          "video": false,
+          "vote_average": 7.5,
+          "vote_count": 16
+        },
+        {
+          "adult": false,
+          "backdrop_path": "/rMvPXy8PUjj1o8o1pzgQbdNCsvj.jpg",
+          "genre_ids": [
+            28,
+            12,
+            53
+          ],
+          "id": 299054,
+          "original_language": "en",
+          "original_title": "Expend4bles",
+          "overview": "Os Mercenários enfrentam um traficante de armas que comanda o poder de um enorme exército privado.",
+          "popularity": 460.286,
+          "poster_path": "/dQxlUkhKGILgq9jbVEe3WPaiW2q.jpg",
+          "release_date": "2023-09-15",
+          "title": "Os Mercenários 4",
+          "video": false,
+          "vote_average": 6.6,
+          "vote_count": 79
         }
       ]
     },

@@ -3,6 +3,7 @@ import { ActivatedRoute } from '@angular/router';
 import { GetMoviesService } from 'src/app/shared/get-movies.service';
 import { GetUsersService } from 'src/app/shared/get-users.service';
 import { RemoveMoviesService } from 'src/app/shared/remove-movies.service';
+import { UserProfileComponent } from 'src/app/user-profile/user-profile.component';
 import { NewUserType } from 'src/utils/new-user-type';
 
 @Component({
@@ -20,6 +21,7 @@ export class FavoriteMoviesComponent implements OnInit {
 
   constructor(
     private route: ActivatedRoute,
+    private userProfileComponent: UserProfileComponent,
     private service: GetMoviesService,
     private serviceRemoveMovies: RemoveMoviesService,
     private serviceGetusers: GetUsersService
@@ -53,5 +55,9 @@ export class FavoriteMoviesComponent implements OnInit {
     );
 
     this.serviceRemoveMovies.deleteMovie(this.currentUser, this.id).subscribe();
+  }
+
+  addToWatchlist(filme: any) {
+    this.userProfileComponent.addMovieInWatchlist(filme);
   }
 }

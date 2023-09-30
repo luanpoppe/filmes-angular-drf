@@ -6,5 +6,7 @@
         <img src="{{ baseUrlImages }}/{{ movie.poster_path }}" alt="{{ movie.title }}">
         <button (click)="removeFromFavorites(movie)" type="button" class="add-watchlist">-
           Favoritos</button>
+        <button (click)="addToWatchlist(movie)" type="button" class="add-watchlist">+
+          Watchlist</button>
       </li>
     </div>

@@ -3,12 +3,18 @@
     <app-sections-title titleContent="Crie sua conta"></app-sections-title>
     <form [formGroup]="formulario" (ngSubmit)="onSubmit()">
       <div class="mb-3">
-        <label for="nome" class="form-label">Nome:</label>
-        <input placeholder="Digite seu nome completo" formControlName="nome" type="text" class="form-control" id="nome">
+        <label for="name" class="form-label">Nome:</label>
+        <input placeholder="Digite seu nome completo" formControlName="name" type="text" class="form-control" id="name">
+        <app-input-invalid *ngIf="isNameInvalid" alertMessage="Nenhum nome foi digitado."></app-input-invalid>
+        <app-input-invalid *ngIf="isNameTooShort"
+          alertMessage="Digite pelo menos um nome e sobrenome."></app-input-invalid>
       </div>
       <div class="mb-3">
         <label for="email" class="form-label">Email:</label>
         <input placeholder="Digite um email válido" formControlName="email" type="text" class="form-control" id="email">
+        <app-input-invalid *ngIf="isEmailInvalid" alertMessage="Digite um email válido."></app-input-invalid>
+        <app-input-invalid *ngIf="isEmailAlreadyInUse"
+          alertMessage="Este email já foi cadastrado. Se cadastre com outro email"></app-input-invalid>
       </div>
       <div class="mb-3 d-flex justify-content-center gap-4">
         <div>
@@ -22,6 +28,14 @@
             id="passwordRepeat">
         </div>
       </div>
+      <app-input-invalid *ngIf="isPasswordInvalid"
+        alertMessage="Digite uma senha com pelo menos 02 dígitos."></app-input-invalid>
+      <app-input-invalid *ngIf="isPasswordRepeatInvalid"
+        alertMessage="Digite a mesma senha no campo de 'Confirme a senha'."></app-input-invalid>
+      <app-input-invalid *ngIf="serverError"
+        alertMessage="Houve um problema com o servidor. Tente novamente mais tarde"></app-input-invalid>
+      <app-alert-success *ngIf="successfulCreatedUser"
+        alertContent="Usuário criado com sucesso! Agora faça o login."></app-alert-success>
       <app-button-main buttonType="submit" buttonContent="Crie sua conta"></app-button-main>
     </form>
   </div>

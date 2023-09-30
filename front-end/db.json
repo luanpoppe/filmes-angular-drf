@@ -136,6 +136,27 @@
           "video": false,
           "vote_average": 6.6,
           "vote_count": 79
+        },
+        {
+          "adult": false,
+          "backdrop_path": "/iiXliCeykkzmJ0Eg9RYJ7F2CWSz.jpg",
+          "genre_ids": [
+            28,
+            9648,
+            53,
+            80
+          ],
+          "id": 762430,
+          "original_language": "en",
+          "original_title": "Retribution",
+          "overview": "Com seus filhos presos no banco de trás e uma bomba que explodirá se eles saírem do carro, um trajeto normal se torna um jogo distorcido de vida ou morte enquanto Matt Turner segue as instruções cada vez mais perigosas de um estranho em uma corrida contra o tempo para salvar sua  família.",
+          "popularity": 1471.79,
+          "poster_path": "/yd0iEtqAXseXQgKf9RjmMaPjUPG.jpg",
+          "release_date": "2023-08-23",
+          "title": "A Chamada",
+          "video": false,
+          "vote_average": 6.9,
+          "vote_count": 246
         }
       ]
     },
@@ -195,6 +216,11 @@
       "password": "123",
       "watchlist": [],
       "favorites": []
+    },
+    {
+      "id": 5,
+      "email": "user5@email.com",
+      "password": "123"
     }
   ]
 }

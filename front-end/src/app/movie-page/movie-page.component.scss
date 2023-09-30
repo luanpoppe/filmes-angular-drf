@@ -1,0 +1,39 @@
+@use "../../utils/mixins.scss";
+@use "../../utils/colors.scss";
+
+@include mixins.page-section();
+
+section {
+  background-color: colors.$black;
+  opacity: 95%;
+  border-radius: 6px;
+  padding: 8px;
+  height: 70vh;
+}
+
+.image-poster {
+  border-radius: 3px;
+  height: 70%;
+  // width: 75%;
+  // display: block;
+  // margin: 0 auto;
+}
+
+.movie-overview {
+  text-align: justify;
+}
+
+
+.buttons {
+  // width: 75%;
+  // display: block;
+  // margin: 0 auto;
+
+  app-button-main {
+    // padding: 0;
+    // width: 50%;
+    // display: inline-block;
+    white-space: nowrap;
+
+  }
+}

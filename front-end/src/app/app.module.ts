@@ -17,6 +17,11 @@ import { SubTitlesComponent } from './sub-titles/sub-titles.component';
 import { UpcomingMoviesComponent } from './movie-list/upcoming-movies/upcoming-movies.component';
 import { WatchlistMoviesComponent } from './movie-list/watchlist-movies/watchlist-movies.component';
 import { FavoriteMoviesComponent } from './movie-list/favorite-movies/favorite-movies.component';
+import { MoviePageComponent } from './movie-page/movie-page.component';
+import { InputInvalidComponent } from './input-invalid/input-invalid.component';
+import { PopoverModule } from 'ngx-bootstrap/popover';
+import { AlertSuccessComponent } from './alert-success/alert-success.component';
+import { SearchMoviesComponent } from './search-movies/search-movies.component';
 
 @NgModule({
   declarations: [
@@ -32,12 +37,17 @@ import { FavoriteMoviesComponent } from './movie-list/favorite-movies/favorite-m
     UpcomingMoviesComponent,
     WatchlistMoviesComponent,
     FavoriteMoviesComponent,
+    MoviePageComponent,
+    InputInvalidComponent,
+    AlertSuccessComponent,
+    SearchMoviesComponent,
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     ReactiveFormsModule,
     HttpClientModule,
+    PopoverModule.forRoot(),
   ],
   providers: [GetMoviesService],
   bootstrap: [AppComponent],

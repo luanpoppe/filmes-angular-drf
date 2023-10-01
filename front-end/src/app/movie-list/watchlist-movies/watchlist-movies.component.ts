@@ -46,7 +46,6 @@ export class WatchlistMoviesComponent implements OnInit {
 
     this.service.getUserWatchlist(this.id).subscribe((data) => {
       this.watchlistMovies = data;
-      console.log(this.watchlistMovies);
     });
   }
 

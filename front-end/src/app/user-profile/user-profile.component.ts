@@ -25,10 +25,12 @@ export class UserProfileComponent implements OnInit {
   ) {}
 
   ngOnInit(): void {
+    // Pega o id do usuário atual pelo parâmetro do URL
     this.route.params.subscribe((params) => {
       this.id = params['id'];
       console.log('O id do usuário atual é ' + this.id);
 
+      // Retorna o objeto do usuário atual
       this.service.getUsers().subscribe((data: any) => {
         this.allUsers = data;
         this.currentUser = this.allUsers.filter(

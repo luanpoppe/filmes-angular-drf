@@ -45,7 +45,6 @@ export class FavoriteMoviesComponent implements OnInit {
 
     this.service.getUserFavorites(this.id).subscribe((data) => {
       this.favoriteMovies = data;
-      console.log(this.favoriteMovies);
     });
   }
 

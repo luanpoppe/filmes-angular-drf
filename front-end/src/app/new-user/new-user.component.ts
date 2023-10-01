@@ -124,6 +124,8 @@ export class NewUserComponent implements OnInit {
         nome: this.formulario.value.nome,
         email: this.formulario.value.email,
         password: this.formulario.value.password,
+        watchlist: [],
+        favorites: [],
       };
       this.service.addNewUser(this.newUser).subscribe({
         next: () => {

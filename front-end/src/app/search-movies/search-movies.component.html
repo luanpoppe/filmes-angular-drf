@@ -25,9 +25,9 @@
                 <img src="{{ baseUrlImages }}/{{ movie.poster_path }}" alt="{{ movie.title }}">
               </a>
               <div class="row container-buttons">
-                <button (click)="addToWatchlist(movie)" type="button" class="col-12 add-watchlist">+
+                <button (click)="addToWatchlistFromSearch(movie)" type="button" class="col-12 add-watchlist">+
                   Watchlist</button>
-                <button (click)="addToFavorites(movie)" type="button" class="col-12 add-watchlist">+
+                <button (click)="addToFavoritesFromSearch(movie)" type="button" class="col-12 add-watchlist">+
                   Favoritos</button>
               </div>
             </li>

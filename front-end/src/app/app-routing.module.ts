@@ -6,6 +6,8 @@ import { NewUserComponent } from './new-user/new-user.component';
 import { UserProfileComponent } from './user-profile/user-profile.component';
 import { MoviePageComponent } from './movie-page/movie-page.component';
 import { SearchMoviesComponent } from './search-movies/search-movies.component';
+import { AuthGuard } from './guards/auth-guard.guard';
+import { GuardResolver } from './guards/guard-resolver';
 
 const routes: Routes = [
   {
@@ -19,18 +21,28 @@ const routes: Routes = [
   {
     path: 'pesquisar',
     component: SearchMoviesComponent,
+    canActivate: [AuthGuard],
   },
   {
     path: 'perfil/:id',
     component: UserProfileComponent,
+    canActivate: [AuthGuard],
+    resolve: {
+      upcomingMoviesResolver: GuardResolver,
+    },
   },
   {
     path: 'filme/:id',
     component: MoviePageComponent,
+    canActivate: [AuthGuard],
   },
   {
     path: '',
     component: MainSectionComponent,
+  },
+  {
+    path: '**',
+    redirectTo: '',
   },
 ];
 

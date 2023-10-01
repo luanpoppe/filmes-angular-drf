@@ -1,1 +1,39 @@
-<p>search-movies works!</p>
+<form [formGroup]="formulario" (ngSubmit)="onSubmit()">
+  <section class="row full-section">
+    <div class="row">
+      <div class="col">
+        <!-- Título da página -->
+        <label for="search" class="d-flex justify-content-center">
+          <app-sections-title titleContent="Pesquisa de filmes"></app-sections-title>
+        </label>
+      </div>
+
+    </div>
+    <!-- Campo de pesquisa + Botão de pesquisar -->
+    <div class="row d-flex justify-content-center">
+      <input class="w-75 col-10" formControlName="search" type="text" id="search">
+      <app-button-main class="col-2 d-flex justify-content-center" buttonContent="Pesquisar"
+        buttonType="submit"></app-button-main>
+    </div>
+    <!-- Filmes pegos do resultado da pesquisa -->
+    <div class="row ">
+      <div *ngIf="moviesResult" class="movie-list-background">
+        <ul>
+          <div class="movies-result">
+            <li *ngFor="let movie of moviesResult" class="">
+              <a [routerLink]="'/filme/' + movie.id">
+                <img src="{{ baseUrlImages }}/{{ movie.poster_path }}" alt="{{ movie.title }}">
+              </a>
+              <div class="row container-buttons">
+                <button (click)="addToWatchlist(movie)" type="button" class="col-12 add-watchlist">+
+                  Watchlist</button>
+                <button (click)="addToFavorites(movie)" type="button" class="col-12 add-watchlist">+
+                  Favoritos</button>
+              </div>
+            </li>
+          </div>
+        </ul>
+      </div>
+    </div>
+  </section>
+</form>

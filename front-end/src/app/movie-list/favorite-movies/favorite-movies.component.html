@@ -3,7 +3,9 @@
   <ul>
     <div class="upcoming-movies">
       <li *ngFor="let movie of favoriteMovies ">
-        <img src="{{ baseUrlImages }}/{{ movie.poster_path }}" alt="{{ movie.title }}">
+        <a [routerLink]="'/filme/' + movie.id">
+          <img src="{{ baseUrlImages }}/{{ movie.poster_path }}" alt="{{ movie.title }}">
+        </a>
         <button (click)="removeFromFavorites(movie)" type="button" class="add-watchlist">-
           Favoritos</button>
         <button (click)="addToWatchlist(movie)" type="button" class="add-watchlist">+

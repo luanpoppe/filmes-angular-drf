@@ -18,6 +18,7 @@ export class UpcomingMoviesComponent implements OnInit {
   ) {}
 
   ngOnInit(): void {
+    // Pegando as configurações básicas para carregar imagens do API
     this.service.getMovieConfiguration().subscribe((data: any) => {
       this.baseUrlImages = data.images.base_url + data.images.backdrop_sizes[0];
     });
@@ -27,11 +28,11 @@ export class UpcomingMoviesComponent implements OnInit {
     });
   }
 
-  addToWatchlist(filme: any) {
-    this.userProfileComponent.addMovieInWatchlist(filme);
+  addToWatchlist(movie: any) {
+    this.userProfileComponent.addMovieInWatchlist(movie);
   }
 
-  addToFavorites(filme: any) {
-    this.userProfileComponent.addMovieInFavorites(filme);
+  addToFavorites(movie: any) {
+    this.userProfileComponent.addMovieInFavorites(movie);
   }
 }

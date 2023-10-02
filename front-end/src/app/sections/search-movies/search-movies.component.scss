@@ -70,32 +70,10 @@ section {
   }
 }
 
+ngbd-toast-inline {
+  // margin-top: 32px;
+  position: fixed;
+  top: 10%;
+  right: 0;
+}
 
-// .movie-list-background {
-//   padding: 24px;
-//   background-color: colors.$black;
-//   border-radius: 6px;
-//   margin-bottom: 16px;
-
-//   ul {
-//     margin: 0;
-//     padding: 0;
-
-//     .upcoming-movies {
-//       display: grid;
-//       grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
-//       gap: 8px;
-
-//       .add-watchlist {
-//         background-color: colors.$blue;
-//         border: none;
-//         margin-top: 8px;
-//         color: colors.$white;
-//         border-radius: 4px;
-//         padding: 4px;
-//         font-size: 0.7em;
-//         margin-right: 4px;
-//       }}
-//   }
-
-// }

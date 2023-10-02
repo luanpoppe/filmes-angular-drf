@@ -6,6 +6,11 @@
         <label for="search" class="d-flex justify-content-center">
           <app-sections-title titleContent="Pesquisa de filmes"></app-sections-title>
         </label>
+        <!-- Toasts de filme adicionado -->
+        <ngbd-toast-inline toastContent="Filme adicionado à watchlist com sucesso" *ngIf="toastMovieToWatchlist"
+          class="d-flex flex-row-reverse"></ngbd-toast-inline>
+        <ngbd-toast-inline toastContent="Filme adicionado aos favoritos com sucesso" *ngIf="toastMovieToFavorites"
+          class="d-flex flex-row-reverse"></ngbd-toast-inline>
       </div>
 
     </div>
@@ -40,4 +45,6 @@
       </div>
     </div>
   </section>
+
+
 </form>

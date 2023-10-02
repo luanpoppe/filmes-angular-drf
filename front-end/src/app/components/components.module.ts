@@ -5,6 +5,8 @@ import { ButtonMainComponent } from './button-main/button-main.component';
 import { InputInvalidComponent } from './input-invalid/input-invalid.component';
 import { SectionsTitleComponent } from './sections-title/sections-title.component';
 import { SubTitlesComponent } from './sub-titles/sub-titles.component';
+import { NgbToastModule } from '@ng-bootstrap/ng-bootstrap';
+import { NgbdToastInline } from './toast/toast.component';
 
 @NgModule({
   declarations: [
@@ -13,14 +15,16 @@ import { SubTitlesComponent } from './sub-titles/sub-titles.component';
     InputInvalidComponent,
     SectionsTitleComponent,
     SubTitlesComponent,
+    NgbdToastInline,
   ],
-  imports: [CommonModule],
+  imports: [CommonModule, NgbToastModule],
   exports: [
     AlertSuccessComponent,
     ButtonMainComponent,
     InputInvalidComponent,
     SectionsTitleComponent,
     SubTitlesComponent,
+    NgbdToastInline,
   ],
 })
 export class ComponentsModule {}

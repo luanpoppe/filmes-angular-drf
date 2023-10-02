@@ -18,6 +18,8 @@ export class SearchMoviesComponent implements OnInit {
   baseUrlImages: any;
   moviesResult: any;
   userId!: any;
+  toastMovieToWatchlist: boolean = false;
+  toastMovieToFavorites: boolean = false;
 
   constructor(
     private formBuilder: FormBuilder,
@@ -62,6 +64,12 @@ export class SearchMoviesComponent implements OnInit {
 
       // Envia o novo objeto do usuário atualizado para o servidor
       this.serviceAddMovie.addMovie(currentUser, this.userId).subscribe();
+
+      // Faz o toast aparecer e depois sumir após 03 segundos
+      this.toastMovieToWatchlist = true;
+      setTimeout(() => {
+        this.toastMovieToWatchlist = false;
+      }, 3000);
     });
   }
 
@@ -75,6 +83,12 @@ export class SearchMoviesComponent implements OnInit {
 
       // Envia o novo objeto do usuário atualizado para o servidor
       this.serviceAddMovie.addMovie(currentUser, this.userId).subscribe();
+
+      // Faz o toast aparecer e depois sumir após 03 segundos
+      this.toastMovieToFavorites = true;
+      setTimeout(() => {
+        this.toastMovieToFavorites = false;
+      }, 3000);
     });
   }
 }

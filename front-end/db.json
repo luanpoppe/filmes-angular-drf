@@ -423,8 +423,152 @@
       "nome": "Usuário 5",
       "email": "user5@email.com",
       "password": "123",
-      "watchlist": [],
-      "favorites": []
+      "watchlist": [
+        {
+          "adult": false,
+          "backdrop_path": "/zcc0My3G4SYR72VuEYHNcUWkkW0.jpg",
+          "genre_ids": [
+            12,
+            14,
+            28
+          ],
+          "id": 121,
+          "original_language": "en",
+          "original_title": "The Lord of the Rings: The Two Towers",
+          "overview": "Frodo and Sam are trekking to Mordor to destroy the One Ring of Power while Gimli, Legolas and Aragorn search for the orc-captured Merry and Pippin. All along, nefarious wizard Saruman awaits the Fellowship members at the Orthanc Tower in Isengard.",
+          "popularity": 83.281,
+          "poster_path": "/5VTN0pR8gcqV3EPUHHfMGnJYN9L.jpg",
+          "release_date": "2002-12-18",
+          "title": "The Lord of the Rings: The Two Towers",
+          "video": false,
+          "vote_average": 8.385,
+          "vote_count": 20282
+        },
+        {
+          "adult": false,
+          "backdrop_path": "/fuo26MkENNfKHQ94mebyKfHNQ8P.jpg",
+          "genre_ids": [
+            18,
+            28,
+            53
+          ],
+          "id": 512731,
+          "original_language": "cn",
+          "original_title": "掃毒2 天地對決",
+          "overview": "A financial tycoon, once a triad member, tries to eradicate the drug market while an old accomplice aims to be Hong Kong's first drug lord.",
+          "popularity": 8.404,
+          "poster_path": "/ja9oIIP33Pgm9295Gn67zBz8Vjy.jpg",
+          "release_date": "2019-07-04",
+          "title": "The White Storm 2: Drug Lords",
+          "video": false,
+          "vote_average": 6.6,
+          "vote_count": 34
+        },
+        {
+          "adult": false,
+          "backdrop_path": "/cyQK5IzMXDUS8o84HYbSIFQt1Vy.jpg",
+          "genre_ids": [
+            28,
+            16,
+            878
+          ],
+          "id": 39102,
+          "original_language": "ja",
+          "original_title": "ドラゴンボールゼット 超スーパーサイヤ人じんだ孫そん悟ご空くう",
+          "overview": "A Super Namekian named Slug comes to invade Earth. But the Z Warriors do their best to stop Slug and his gang.",
+          "popularity": 34.464,
+          "poster_path": "/1lmwZTsqwTtvd3m60pyQfhGM2Ut.jpg",
+          "release_date": "1991-03-19",
+          "title": "Dragon Ball Z: Lord Slug",
+          "video": false,
+          "vote_average": 6.438,
+          "vote_count": 463
+        },
+        {
+          "adult": false,
+          "backdrop_path": "/oTOKHnJRNmZh4JtuE5GJ2tFVpWW.jpg",
+          "genre_ids": [
+            80,
+            18,
+            53
+          ],
+          "id": 1830,
+          "original_language": "en",
+          "original_title": "Lord of War",
+          "overview": "Yuri Orlov is a globetrotting arms dealer and, through some of the deadliest war zones, he struggles to stay one step ahead of a relentless Interpol agent, his business rivals and even some of his customers who include many of the world's most notorious dictators. Finally, he must also face his own conscience.",
+          "popularity": 26.058,
+          "poster_path": "/3MGQD4yXokufNlW1AyRXdiy7ytP.jpg",
+          "release_date": "2005-09-16",
+          "title": "Lord of War",
+          "video": false,
+          "vote_average": 7.281,
+          "vote_count": 4271
+        }
+      ],
+      "favorites": [
+        {
+          "adult": false,
+          "backdrop_path": "/cyQK5IzMXDUS8o84HYbSIFQt1Vy.jpg",
+          "genre_ids": [
+            28,
+            16,
+            878
+          ],
+          "id": 39102,
+          "original_language": "ja",
+          "original_title": "ドラゴンボールゼット 超スーパーサイヤ人じんだ孫そん悟ご空くう",
+          "overview": "A Super Namekian named Slug comes to invade Earth. But the Z Warriors do their best to stop Slug and his gang.",
+          "popularity": 34.464,
+          "poster_path": "/1lmwZTsqwTtvd3m60pyQfhGM2Ut.jpg",
+          "release_date": "1991-03-19",
+          "title": "Dragon Ball Z: Lord Slug",
+          "video": false,
+          "vote_average": 6.438,
+          "vote_count": 463
+        },
+        {
+          "adult": false,
+          "backdrop_path": "/lKilKeX1rlIhRcY4xQPP4bmuct9.jpg",
+          "genre_ids": [
+            16,
+            14,
+            18,
+            878
+          ],
+          "id": 369552,
+          "original_language": "zh",
+          "original_title": "爵迹",
+          "overview": "Based on the novel of the same name, the film depicts the endless battles of four kingdoms as they fight for power and domination of the one ultimate realm.Based on his 2 beloved fantasy novels with 6 million copies sold, L.O.R.D is acclaimed writer and director Guo Jingming’s follow up to his Tiny Times films.  The action-adventure odyssey is set in a world of warring Sorcerers, Lords and Beasts. The first CGI Film to come from China",
+          "popularity": 17.13,
+          "poster_path": "/qIUDi1XDAREkarkwNzOOBgUzqyC.jpg",
+          "release_date": "2016-09-29",
+          "title": "L.O.R.D: Legend of Ravaging Dynasties",
+          "video": false,
+          "vote_average": 7.033,
+          "vote_count": 121
+        },
+        {
+          "adult": false,
+          "backdrop_path": "/pz81SGRPxUI3OINfpf7XIdwEJgI.jpg",
+          "genre_ids": [
+            16,
+            28,
+            14,
+            35
+          ],
+          "id": 570269,
+          "original_language": "ja",
+          "original_title": "劇場版 トリニティセブン -天空図書館と真紅の魔王-",
+          "overview": "The series focuses on the adventures of Arata Kasuga, a high school student, who is targeted by Lilith, a teacher at a mystical school. Given three choices in an effort to help save the breakdown phenomenon of the world by evil forces and while attempting to solve the mystery of his beloved cousin and childhood friend, Hijiri, who disappeared to a difference space.",
+          "popularity": 10,
+          "poster_path": "/vh4f6N3VdgzmYnRK3VctwBZWdv9.jpg",
+          "release_date": "2019-03-29",
+          "title": "Trinity Seven: Heaven's Library & Crimson Lord",
+          "video": false,
+          "vote_average": 8.022,
+          "vote_count": 46
+        }
+      ]
     }
   ]
 }

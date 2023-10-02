@@ -17,7 +17,7 @@ export class LoginComponent implements OnInit {
   isPasswordWrong!: boolean;
   userEmail!: string;
   userPassword!: string;
-  doUserExist: boolean = false;
+  doUserExist!: boolean;
   userId!: string | number;
 
   constructor(
@@ -38,6 +38,7 @@ export class LoginComponent implements OnInit {
     this.userEmail = this.formulario.value.email;
     this.userPassword = this.formulario.value.password;
     this.isPasswordWrong = false;
+    this.doUserExist = true;
 
     // Se o email for inválido:
     if (this.formulario.get('email')?.invalid) {
@@ -68,8 +69,7 @@ export class LoginComponent implements OnInit {
         // Checa se o usuário existe
         if (filterUsers.length === 0) {
           // Se o usuário não existe:
-          //TERMINAR ESSA PARTE
-          console.log('usuário não existe');
+          this.doUserExist = false;
         } else {
           //Se o usuário existe
           if (filterUsers.length > 0) {

@@ -7,8 +7,6 @@ import { NewUserType } from 'src/utils/new-user-type';
   providedIn: 'root',
 })
 export class GetMoviesService {
-  favoritesMovies: any;
-
   constructor(private http: HttpClient) {}
 
   headers = new HttpHeaders({
@@ -55,11 +53,10 @@ export class GetMoviesService {
       .get('http://localhost:3000/usuarios')
       .pipe(
         map((data: any) => {
-          this.favoritesMovies = data.filter(
+          const favorites = data.find(
             (user: any) => parseInt(userId) === user.id
-          )[0];
-          this.favoritesMovies = this.favoritesMovies.favorites;
-          return this.favoritesMovies;
+          )?.favorites;
+          return favorites;
         })
       )
       .pipe(take(1));

@@ -32,10 +32,6 @@ export class UserProfileComponent implements OnInit {
     // Pega o id do usuário atual pelo parâmetro do URL
     this.id = this.dataService.getUserId();
 
-    // this.route.params.subscribe((params) => {
-    //   this.id = params['id'];
-    //   console.log('O id do usuário atual é ' + this.id);
-
     // Retorna o objeto do usuário atual
     this.service.getUsers().subscribe((data: any) => {
       this.allUsers = data;
@@ -48,12 +44,11 @@ export class UserProfileComponent implements OnInit {
     // );
   }
 
-  getUserWatchlist() {
-    this.serviceGetMovies.getUserWatchlist(this.id).subscribe();
-  }
+  // getUserWatchlist() {
+  //   this.serviceGetMovies.getUserWatchlist(this.id).subscribe();
+  // }
 
   addMovieInWatchlist(movie: any) {
-    console.log(this.currentUser);
     if (!this.currentUser.watchlist.some((m) => m.id === movie.id)) {
       this.currentUser.watchlist?.push(movie);
       this.serviceAddMovies.addMovie(this.currentUser, this.id).subscribe();
@@ -61,19 +56,17 @@ export class UserProfileComponent implements OnInit {
   }
 
   addMovieInFavorites(movie: any) {
-    this.currentUser.favorites?.push(movie);
-
-    this.serviceAddMovies.addMovie(this.currentUser, this.id).subscribe();
-    console.log(this.currentUser);
+    if (!this.currentUser.favorites.some((m) => m.id === movie.id)) {
+      this.currentUser.favorites?.push(movie);
+      this.serviceAddMovies.addMovie(this.currentUser, this.id).subscribe();
+    }
   }
 
   listenEmitter(event: any) {
-    console.log(this.currentUser);
     this.newMovie = event;
   }
 
   updateUser(event: any) {
-    console.log('Atualizando usuário', this.currentUser);
     this.currentUser = event;
   }
 }

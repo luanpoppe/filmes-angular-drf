@@ -7,6 +7,8 @@
         <input formControlName="email" type="text" class="form-control" id="email">
         <app-input-invalid *ngIf="isEmailInvalid"
           alertMessage="Email está incorreto. Digite novamente."></app-input-invalid>
+        <app-input-invalid *ngIf="!doUserExist"
+          alertMessage="Não existe usuário cadastrado com este email."></app-input-invalid>
       </div>
       <div class="mb-3">
         <label for="password" class="form-label">Senha:</label>

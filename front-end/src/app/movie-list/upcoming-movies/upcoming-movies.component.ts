@@ -52,6 +52,15 @@ export class UpcomingMoviesComponent implements OnInit {
   }
 
   addToFavorites(movie: any) {
-    this.userProfileComponent.addMovieInFavorites(movie);
+    if (this.userProfileComponent.currentUser) {
+      if (
+        !this.userProfileComponent.currentUser.favorites.some(
+          (m) => m.id === movie.id
+        )
+      ) {
+        this.userProfileComponent.addMovieInFavorites(movie);
+        this.emitter.emit(movie);
+      }
+    }
   }
 }

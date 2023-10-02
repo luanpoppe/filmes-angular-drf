@@ -1,4 +1,11 @@
-import { Component, OnInit } from '@angular/core';
+import {
+  Component,
+  EventEmitter,
+  Input,
+  OnChanges,
+  OnInit,
+  Output,
+} from '@angular/core';
 import { ActivatedRoute } from '@angular/router';
 import { GetMoviesService } from 'src/app/shared/get-movies.service';
 import { GetUsersService } from 'src/app/shared/get-users.service';
@@ -12,51 +19,72 @@ import { DataService } from 'src/app/shared/data-service.service';
   templateUrl: './favorite-movies.component.html',
   styleUrls: ['./favorite-movies.component.scss'],
 })
-export class FavoriteMoviesComponent implements OnInit {
+export class FavoriteMoviesComponent implements OnInit, OnChanges {
   listTite: string = 'Seus favoritos';
   favoriteMovies: any = null;
   id: any;
-  baseUrlImages!: string;
+  baseUrlImages: string = 'https://image.tmdb.org/t/p/w500/';
   allUsers!: NewUserType[];
   currentUser!: NewUserType;
+  @Input() newMovie: any = null;
+  @Output() emitter = new EventEmitter<any>();
 
   constructor(
     private route: ActivatedRoute,
-    private userProfileComponent: UserProfileComponent,
     private service: GetMoviesService,
     private serviceRemoveMovies: RemoveMoviesService,
     private serviceGetusers: GetUsersService,
+    private userProfileComponent: UserProfileComponent,
     private dataService: DataService
   ) {}
 
+  ngOnChanges(): void {
+    this.getFavorites();
+  }
+
   ngOnInit(): void {
+    // Pegar o ID do usuário do Local Storage
     this.id = this.dataService.getUserId();
 
-    this.serviceGetusers.getUsers().subscribe((data: any) => {
-      this.allUsers = data;
-      this.currentUser = this.allUsers.filter(
-        (u: NewUserType) => u.id == this.id
-      )[0];
-    });
+    // Retorna o usuário do id informado
+    this.getUserInfo();
 
-    this.service.getMovieConfiguration().subscribe((data: any) => {
-      this.baseUrlImages = data.images.base_url + data.images.backdrop_sizes[0];
-    });
-
-    this.service.getUserFavorites(this.id).subscribe((data) => {
-      this.favoriteMovies = data;
-    });
+    // this.service.getMovieConfiguration().subscribe((data: any) => {
+    //   this.baseUrlImages = data.images.base_url + data.images.backdrop_sizes[0];
+    // });
   }
 
   removeFromFavorites(movie: any) {
+    // Atualiza a lista de favoritos do usuário para não conter o filme em questão
     this.currentUser.favorites = this.currentUser.favorites?.filter(
       (m: any) => movie.id !== m.id
     );
 
-    this.serviceRemoveMovies.deleteMovie(this.currentUser, this.id).subscribe();
+    this.serviceRemoveMovies
+      .deleteMovie(this.currentUser, this.id)
+      .subscribe((data: any) => {
+        this.favoriteMovies = this.currentUser.favorites;
+        this.emitter.emit(this.currentUser);
+      });
   }
 
-  addToWatchlist(filme: any) {
-    this.userProfileComponent.addMovieInWatchlist(filme);
+  addToWatchlist(movie: any) {
+    this.userProfileComponent.addMovieInWatchlist(movie);
+  }
+
+  getUserInfo() {
+    this.serviceGetusers.getUsers().subscribe((data: any) => {
+      this.currentUser = data.find((u: NewUserType) => u.id == this.id);
+      this.favoriteMovies = this.currentUser.favorites;
+    });
+  }
+
+  getFavorites() {
+    this.service.getUserFavorites(this.id).subscribe((data) => {
+      if (this.currentUser) {
+        this.currentUser.favorites = data;
+        this.favoriteMovies = this.currentUser.favorites;
+      }
+    });
   }
 }

@@ -3,5 +3,5 @@
     titleContent2=", seja bem vindo(a) de volta!"></app-sections-title>
   <app-upcoming-movies (emitter)="listenEmitter($event)"></app-upcoming-movies>
   <app-watchlist-movies (emitter)="updateUser($event)" [newMovie]="newMovie"></app-watchlist-movies>
-  <app-favorite-movies></app-favorite-movies>
+  <app-favorite-movies (emitter)="updateUser($event)" [newMovie]="newMovie"></app-favorite-movies>
 </section>

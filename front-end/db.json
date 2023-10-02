@@ -28,26 +28,6 @@
         },
         {
           "adult": false,
-          "backdrop_path": "/iQcCAm8hKWZyUntqrvzyEGtXyJl.jpg",
-          "genre_ids": [
-            878,
-            28,
-            53
-          ],
-          "id": 670292,
-          "original_language": "en",
-          "original_title": "The Creator",
-          "overview": "Em meio a uma futura guerra entre a raça humana e as forças da inteligência artificial, Joshua, um endurecido ex-agente das forças especiais que lamenta o desaparecimento de sua esposa, é recrutado para caçar e matar o Criador, o indescritível arquiteto da IA avançada que desenvolveu uma arma misteriosa com o poder de acabar com a guerra - e a própria humanidade.",
-          "popularity": 671.371,
-          "poster_path": "/187OBBT5oMQ2XPXgx9F8JhlycvK.jpg",
-          "release_date": "2023-09-27",
-          "title": "Resistência",
-          "video": false,
-          "vote_average": 7.4,
-          "vote_count": 135
-        },
-        {
-          "adult": false,
           "backdrop_path": "/53z2fXEKfnNg2uSOPss2unPBGX1.jpg",
           "genre_ids": [
             27,
@@ -68,24 +48,23 @@
         },
         {
           "adult": false,
-          "backdrop_path": "/iiXliCeykkzmJ0Eg9RYJ7F2CWSz.jpg",
+          "backdrop_path": "/iQcCAm8hKWZyUntqrvzyEGtXyJl.jpg",
           "genre_ids": [
+            878,
             28,
-            9648,
-            53,
-            80
+            53
           ],
-          "id": 762430,
+          "id": 670292,
           "original_language": "en",
-          "original_title": "Retribution",
-          "overview": "Com seus filhos presos no banco de trás e uma bomba que explodirá se eles saírem do carro, um trajeto normal se torna um jogo distorcido de vida ou morte enquanto Matt Turner segue as instruções cada vez mais perigosas de um estranho em uma corrida contra o tempo para salvar sua  família.",
-          "popularity": 1706.372,
-          "poster_path": "/yd0iEtqAXseXQgKf9RjmMaPjUPG.jpg",
-          "release_date": "2023-08-23",
-          "title": "A Chamada",
+          "original_title": "The Creator",
+          "overview": "Em meio a uma futura guerra entre a raça humana e as forças da inteligência artificial, Joshua, um endurecido ex-agente das forças especiais que lamenta o desaparecimento de sua esposa, é recrutado para caçar e matar o Criador, o indescritível arquiteto da IA avançada que desenvolveu uma arma misteriosa com o poder de acabar com a guerra - e a própria humanidade.",
+          "popularity": 671.371,
+          "poster_path": "/187OBBT5oMQ2XPXgx9F8JhlycvK.jpg",
+          "release_date": "2023-09-27",
+          "title": "Resistência",
           "video": false,
-          "vote_average": 6.8,
-          "vote_count": 262
+          "vote_average": 7.4,
+          "vote_count": 135
         },
         {
           "adult": false,
@@ -125,67 +104,50 @@
           "video": false,
           "vote_average": 8,
           "vote_count": 503
-        },
-        {
-          "adult": false,
-          "backdrop_path": "/cyQK5IzMXDUS8o84HYbSIFQt1Vy.jpg",
-          "genre_ids": [
-            28,
-            16,
-            878
-          ],
-          "id": 39102,
-          "original_language": "ja",
-          "original_title": "ドラゴンボールゼット 超スーパーサイヤ人じんだ孫そん悟ご空くう",
-          "overview": "A Super Namekian named Slug comes to invade Earth. But the Z Warriors do their best to stop Slug and his gang.",
-          "popularity": 34.464,
-          "poster_path": "/1lmwZTsqwTtvd3m60pyQfhGM2Ut.jpg",
-          "release_date": "1991-03-19",
-          "title": "Dragon Ball Z: Lord Slug",
-          "video": false,
-          "vote_average": 6.438,
-          "vote_count": 463
-        },
-        {
-          "adult": false,
-          "backdrop_path": "/2u7zbn8EudG6kLlBzUYqP8RyFU4.jpg",
-          "genre_ids": [
-            12,
-            14,
-            28
-          ],
-          "id": 122,
-          "original_language": "en",
-          "original_title": "The Lord of the Rings: The Return of the King",
-          "overview": "Aragorn is revealed as the heir to the ancient kings as he, Gandalf and the other members of the broken fellowship struggle to save Gondor from Sauron's forces. Meanwhile, Frodo and Sam take the ring closer to the heart of Mordor, the dark lord's realm.",
-          "popularity": 102.7,
-          "poster_path": "/rCzpDGLbOoPwLjy3OAm5NUPOTrC.jpg",
-          "release_date": "2003-12-01",
-          "title": "The Lord of the Rings: The Return of the King",
-          "video": false,
-          "vote_average": 8.5,
-          "vote_count": 22349
-        },
-        {
-          "adult": false,
-          "backdrop_path": "/g8Yytnby0hIPft5l56mgJtZyR1k.jpg",
-          "genre_ids": [
-            28
-          ],
-          "id": 965839,
-          "original_language": "en",
-          "original_title": "Lord of the Streets",
-          "overview": "When Jason Dyson refuses to make his prized fighter throw an MMA match, a notorious gangster collects his debt by killing the fighter and kidnapping Jason's daughter. Now he must train a prisoner to endure five consecutive underground fights to save her.",
-          "popularity": 23.303,
-          "poster_path": "/n9YWVQRc0zw0nwrFcOkOpffZxjc.jpg",
-          "release_date": "2022-04-22",
-          "title": "Lord of the Streets",
-          "video": false,
-          "vote_average": 5.238,
-          "vote_count": 65
         }
       ],
       "favorites": [
+        {
+          "adult": false,
+          "backdrop_path": "/iiXliCeykkzmJ0Eg9RYJ7F2CWSz.jpg",
+          "genre_ids": [
+            28,
+            9648,
+            53,
+            80
+          ],
+          "id": 762430,
+          "original_language": "en",
+          "original_title": "Retribution",
+          "overview": "Com seus filhos presos no banco de trás e uma bomba que explodirá se eles saírem do carro, um trajeto normal se torna um jogo distorcido de vida ou morte enquanto Matt Turner segue as instruções cada vez mais perigosas de um estranho em uma corrida contra o tempo para salvar sua  família.",
+          "popularity": 1706.372,
+          "poster_path": "/yd0iEtqAXseXQgKf9RjmMaPjUPG.jpg",
+          "release_date": "2023-08-23",
+          "title": "A Chamada",
+          "video": false,
+          "vote_average": 6.8,
+          "vote_count": 262
+        },
+        {
+          "adult": false,
+          "backdrop_path": "/53z2fXEKfnNg2uSOPss2unPBGX1.jpg",
+          "genre_ids": [
+            27,
+            9648,
+            53
+          ],
+          "id": 968051,
+          "original_language": "en",
+          "original_title": "The Nun II",
+          "overview": "Quatro anos após os acontecimentos na abadia de St. Carta, a Irmã Irene (Taissa Farmiga) regressa mais uma vez e depara-se com a força demoníaca de Valak, a Freira (Bonnie Aarons).",
+          "popularity": 1692.778,
+          "poster_path": "/jv7lyPfBC1heRWtQUd1gX7Q0wSo.jpg",
+          "release_date": "2023-09-06",
+          "title": "A Freira 2",
+          "video": false,
+          "vote_average": 6.5,
+          "vote_count": 362
+        },
         {
           "adult": false,
           "backdrop_path": "/waBWlJlMpyFb7STkFHfFvJKgwww.jpg",
@@ -197,141 +159,53 @@
           "original_language": "en",
           "original_title": "Sound of Freedom",
           "overview": "A história de Tim Ballard, um ex-agente do governo dos EUA, que largou seu emprego para dedicar sua vida a resgatar crianças de traficantes sexuais globais.",
-          "popularity": 1111.036,
+          "popularity": 1555.45,
           "poster_path": "/2BWhcrlPr6UvSJy5D044Ikq2QxH.jpg",
           "release_date": "2023-07-03",
           "title": "Som da Liberdade",
           "video": false,
           "vote_average": 8,
-          "vote_count": 501
+          "vote_count": 503
         },
         {
           "adult": false,
-          "backdrop_path": "/8ZTVqvKDQ8emSGUEMjsS4yHAwrp.jpg",
-          "belongs_to_collection": null,
-          "budget": 160000000,
-          "genres": [
-            {
-              "id": 28,
-              "name": "Ação"
-            },
-            {
-              "id": 878,
-              "name": "Ficção científica"
-            },
-            {
-              "id": 12,
-              "name": "Aventura"
-            }
-          ],
-          "homepage": "",
-          "id": 27205,
-          "imdb_id": "tt1375666",
-          "original_language": "en",
-          "original_title": "Inception",
-          "overview": "Um ladrão que rouba segredos corporativos por meio do uso da tecnologia de compartilhamento de sonhos, recebe a tarefa inversa de plantar uma ideia na mente de um Diretor Executivo.",
-          "popularity": 70.897,
-          "poster_path": "/k3UoZhRHg6h2XYzwNAJJvGC2yev.jpg",
-          "production_companies": [
-            {
-              "id": 923,
-              "logo_path": "/5UQsZrfbfG2dYJbx8DxfoTr2Bvu.png",
-              "name": "Legendary Pictures",
-              "origin_country": "US"
-            },
-            {
-              "id": 9996,
-              "logo_path": "/3tvBqYsBhxWeHlu62SIJ1el93O7.png",
-              "name": "Syncopy",
-              "origin_country": "GB"
-            },
-            {
-              "id": 174,
-              "logo_path": "/IuAlhI9eVC9Z8UQWOIDdWRKSEJ.png",
-              "name": "Warner Bros. Pictures",
-              "origin_country": "US"
-            }
-          ],
-          "production_countries": [
-            {
-              "iso_3166_1": "GB",
-              "name": "United Kingdom"
-            },
-            {
-              "iso_3166_1": "US",
-              "name": "United States of America"
-            }
-          ],
-          "release_date": "2010-07-15",
-          "revenue": 825532764,
-          "runtime": 148,
-          "spoken_languages": [
-            {
-              "english_name": "English",
-              "iso_639_1": "en",
-              "name": "English"
-            },
-            {
-              "english_name": "French",
-              "iso_639_1": "fr",
-              "name": "Français"
-            },
-            {
-              "english_name": "Japanese",
-              "iso_639_1": "ja",
-              "name": "日本語"
-            },
-            {
-              "english_name": "Swahili",
-              "iso_639_1": "sw",
-              "name": "Kiswahili"
-            }
-          ],
-          "status": "Released",
-          "tagline": "Sua mente é a cena do crime.",
-          "title": "A Origem",
-          "video": false,
-          "vote_average": 8.364,
-          "vote_count": 34506
-        },
-        {
-          "adult": false,
-          "backdrop_path": "/A0IRBPPpwxRsdmglpPQ0yo0FgLQ.jpg",
+          "backdrop_path": "/iQcCAm8hKWZyUntqrvzyEGtXyJl.jpg",
           "genre_ids": [
-            28,
-            35
-          ],
-          "id": 16407,
-          "original_language": "cn",
-          "original_title": "龍少爺",
-          "overview": "Dragon and his madcap pal Cowboy spend their days getting into mischief, frustrating the elders, chasing girls, and competing in the village sport. When Dragon overhears a fiendish plot by smugglers to sell China's national treasures overseas, the pair leap into action. Also, Cowboy's wealthy father is kidnapped by the villainous and lethal Big Boss, and the scene is set for a furious martial arts showdown.",
-          "popularity": 15.59,
-          "poster_path": "/qjQhm2jwV4DSTauOydFJVhVyMS3.jpg",
-          "release_date": "1982-01-21",
-          "title": "Dragon Lord",
-          "video": false,
-          "vote_average": 6.264,
-          "vote_count": 110
-        },
-        {
-          "adult": false,
-          "backdrop_path": "/8ZTVqvKDQ8emSGUEMjsS4yHAwrp.jpg",
-          "genre_ids": [
-            28,
             878,
-            12
+            28,
+            53
           ],
-          "id": 27205,
+          "id": 670292,
           "original_language": "en",
-          "original_title": "Inception",
-          "overview": "Cobb, a skilled thief who commits corporate espionage by infiltrating the subconscious of his targets is offered a chance to regain his old life as payment for a task considered to be impossible: \"inception\", the implantation of another person's idea into a target's subconscious.",
-          "popularity": 72.888,
-          "poster_path": "/oYuLEt3zVCKq57qu2F8dT7NIa6f.jpg",
-          "release_date": "2010-07-15",
-          "title": "Inception",
+          "original_title": "The Creator",
+          "overview": "Em meio a uma futura guerra entre a raça humana e as forças da inteligência artificial, Joshua, um endurecido ex-agente das forças especiais que lamenta o desaparecimento de sua esposa, é recrutado para caçar e matar o Criador, o indescritível arquiteto da IA avançada que desenvolveu uma arma misteriosa com o poder de acabar com a guerra - e a própria humanidade.",
+          "popularity": 671.371,
+          "poster_path": "/187OBBT5oMQ2XPXgx9F8JhlycvK.jpg",
+          "release_date": "2023-09-27",
+          "title": "Resistência",
           "video": false,
-          "vote_average": 8.364,
-          "vote_count": 34511
+          "vote_average": 7.4,
+          "vote_count": 135
+        },
+        {
+          "adult": false,
+          "backdrop_path": "/rMvPXy8PUjj1o8o1pzgQbdNCsvj.jpg",
+          "genre_ids": [
+            28,
+            12,
+            53
+          ],
+          "id": 299054,
+          "original_language": "en",
+          "original_title": "Expend4bles",
+          "overview": "Os Mercenários enfrentam um traficante de armas que comanda o poder de um enorme exército privado.",
+          "popularity": 443.124,
+          "poster_path": "/dQxlUkhKGILgq9jbVEe3WPaiW2q.jpg",
+          "release_date": "2023-09-15",
+          "title": "Os Mercenários 4",
+          "video": false,
+          "vote_average": 6.6,
+          "vote_count": 90
         }
       ]
     },

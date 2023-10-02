@@ -45,29 +45,22 @@ export class WatchlistMoviesComponent implements OnInit, OnChanges {
   }
 
   ngOnInit(): void {
+    // Pegar o ID do usuário do Local Storage
     this.id = this.dataService.getUserId();
 
-    // this.route.params.subscribe((params) => {
-    //   this.id = params['id'];
-    // });
-
+    // Retorna o usuário do id informado
     this.getUserInfo();
 
     // this.service.getMovieConfiguration().subscribe((data: any) => {
     //   this.baseUrlImages = data.images.base_url + data.images.backdrop_sizes[0];
     // });
-
-    // this.getWatchlist();
   }
 
   removeFromWatchlist(movie: any) {
-    console.log(JSON.parse(JSON.stringify(this.currentUser)));
-
+    // Atualiza a lista de watchlist do usuário para não conter o filme em questão
     this.currentUser.watchlist = this.currentUser.watchlist?.filter(
       (m: any) => movie.id !== m.id
     );
-
-    console.log(this.currentUser);
 
     this.serviceRemoveMovies
       .deleteMovie(this.currentUser, this.id)
@@ -84,7 +77,6 @@ export class WatchlistMoviesComponent implements OnInit, OnChanges {
   getUserInfo() {
     this.serviceGetusers.getUsers().subscribe((data: any) => {
       this.currentUser = data.find((u: NewUserType) => u.id == this.id);
-      console.log(this.currentUser);
       this.watchlistMovies = this.currentUser.watchlist;
     });
   }

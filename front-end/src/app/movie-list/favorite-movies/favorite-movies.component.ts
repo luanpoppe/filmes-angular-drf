@@ -26,6 +26,7 @@ export class FavoriteMoviesComponent implements OnInit, OnChanges {
   baseUrlImages: string = 'https://image.tmdb.org/t/p/w500/';
   allUsers!: NewUserType[];
   currentUser!: NewUserType;
+  isCollapsed: boolean = false;
   @Input() newMovie: any = null;
   @Output() emitter = new EventEmitter<any>();
 

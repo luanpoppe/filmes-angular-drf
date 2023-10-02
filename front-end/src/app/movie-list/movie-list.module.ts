@@ -1,3 +1,4 @@
+import { CollapseModule } from 'ngx-bootstrap/collapse';
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { FavoriteMoviesComponent } from './favorite-movies/favorite-movies.component';
@@ -5,6 +6,7 @@ import { UpcomingMoviesComponent } from './upcoming-movies/upcoming-movies.compo
 import { WatchlistMoviesComponent } from './watchlist-movies/watchlist-movies.component';
 import { ComponentsModule } from '../components/components.module';
 import { RouterModule } from '@angular/router';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
 @NgModule({
   declarations: [
@@ -12,7 +14,13 @@ import { RouterModule } from '@angular/router';
     UpcomingMoviesComponent,
     WatchlistMoviesComponent,
   ],
-  imports: [CommonModule, ComponentsModule, RouterModule],
+  imports: [
+    CommonModule,
+    ComponentsModule,
+    RouterModule,
+    BrowserAnimationsModule,
+    CollapseModule.forRoot(),
+  ],
   exports: [
     FavoriteMoviesComponent,
     UpcomingMoviesComponent,

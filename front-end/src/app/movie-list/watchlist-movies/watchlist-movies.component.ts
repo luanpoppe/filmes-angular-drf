@@ -6,7 +6,6 @@ import {
   OnChanges,
   OnInit,
   Output,
-  SimpleChanges,
 } from '@angular/core';
 import { ActivatedRoute } from '@angular/router';
 import { GetMoviesService } from 'src/app/shared/get-movies.service';
@@ -28,6 +27,7 @@ export class WatchlistMoviesComponent implements OnInit, OnChanges {
   baseUrlImages: string = 'https://image.tmdb.org/t/p/w500/';
   allUsers!: NewUserType[];
   currentUser!: NewUserType;
+  isCollapsed: boolean = false;
   @Input() newMovie: any = null;
   @Output() emitter = new EventEmitter<any>();
 

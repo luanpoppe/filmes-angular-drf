@@ -65,7 +65,7 @@ export class GetMoviesService {
   getSearchedMovies(movieSearched: string | number) {
     return this.http
       .get(
-        `https://api.themoviedb.org/3/search/movie?query=${movieSearched}&include_adult=false&language=en-US&page=1`,
+        `https://api.themoviedb.org/3/search/movie?query=${movieSearched}&include_adult=false&language=pt-BR&page=1`,
         {
           headers: this.headers,
         }

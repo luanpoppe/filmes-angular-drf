@@ -1,16 +1,17 @@
 <div class="movie-list-background">
-  <app-sub-titles [content]="listTite" class="text-center"></app-sub-titles>
-  <ul>
-    <div class="upcoming-movies">
-      <li *ngFor="let movie of currentUser?.watchlist">
-        <a [routerLink]="'/filme/' + movie.id">
-          <img src="{{ baseUrlImages }}/{{ movie.poster_path }}" alt="{{ movie.title }}">
-        </a>
-        <button (click)="removeFromWatchlist(movie)" type="button" class="add-watchlist">-
-          Watchlist</button>
-        <button (click)="addToFavorites(movie)" type="button" class="add-watchlist">+
-          Favoritos</button>
-      </li>
-    </div>
-    <div class="no-movies-message" *ngIf="watchlistMovies < 1">Parece que não há nada por aqui. Por que não começa
-      adicionando um filme à sua watchlist?</div>
+  <app-sub-titles (click)="isCollapsed = !isCollapsed" [content]="listTite" class="text-center"></app-sub-titles>
+  <div id="collapseBasic" [collapse]="isCollapsed" [isAnimated]="true">
+    <ul>
+      <div class="upcoming-movies">
+        <li *ngFor="let movie of currentUser?.watchlist">
+          <a [routerLink]="'/filme/' + movie.id">
+            <img src="{{ baseUrlImages }}/{{ movie.poster_path }}" alt="{{ movie.title }}">
+          </a>
+          <button (click)="removeFromWatchlist(movie)" type="button" class="add-watchlist">-
+            Watchlist</button>
+          <button (click)="addToFavorites(movie)" type="button" class="add-watchlist">+
+            Favoritos</button>
+        </li>
+      </div>
+      <div class="no-movies-message" *ngIf="watchlistMovies < 1">Parece que não há nada por aqui. Por que não começa
+        adicionando um filme à sua watchlist?</div>

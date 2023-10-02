@@ -13,6 +13,7 @@ export class UpcomingMoviesComponent implements OnInit {
   upcomingMovies: any;
   baseUrlImages: any;
   inscricao!: any;
+  isCollapsed: boolean = false;
   @Output() emitter = new EventEmitter<any>();
 
   constructor(

@@ -332,25 +332,6 @@
           "video": false,
           "vote_average": 8.364,
           "vote_count": 34511
-        },
-        {
-          "adult": false,
-          "backdrop_path": "/yLfUS9nFmyrYsntznhvxpZMrdtl.jpg",
-          "genre_ids": [
-            27,
-            14
-          ],
-          "id": 8973,
-          "original_language": "en",
-          "original_title": "Lord of Illusions",
-          "overview": "During a routine case in L.A., NY private investigator Harry D'Amour stumbles over members of a fanatic cult who are preparing for the resurrection of their leader Nix, a powerful magician who was killed 13 years earlier.",
-          "popularity": 10.105,
-          "poster_path": "/miQREwapDUNwfInokjeVLt8BiNM.jpg",
-          "release_date": "1995-08-25",
-          "title": "Lord of Illusions",
-          "video": false,
-          "vote_average": 6,
-          "vote_count": 286
         }
       ]
     },

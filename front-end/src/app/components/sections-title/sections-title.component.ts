@@ -7,6 +7,8 @@ import { Component, OnInit, Input } from '@angular/core';
 })
 export class SectionsTitleComponent implements OnInit {
   @Input() titleContent!: string;
+  @Input() userName: string = '';
+  @Input() titleContent2: string = '';
 
   constructor() {}
 

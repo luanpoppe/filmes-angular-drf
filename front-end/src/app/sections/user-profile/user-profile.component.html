@@ -1,9 +1,6 @@
 <section>
-  <!-- <button (click)="addMovieInWatchlist()" class="btn btn-primary">ADICIONAR FILME</button> -->
-  <app-sections-title class="mb-3" titleContent="Seja bem vindo de volta!"></app-sections-title>
-  <!-- <app-movie-list [isUpcomingMovies]="true" [isWatchlist]="false" listTite="Próximas estreias"
-    getMovies="upcomingMovies"></app-movie-list>
-  <app-movie-list [isWatchlistMovies]="true" listTite="Watchlist" getMovies="userWatchlist"></app-movie-list> -->
+  <app-sections-title class="mb-3" titleContent="Olá " [userName]="userName"
+    titleContent2=", seja bem vindo(a) de volta!"></app-sections-title>
   <app-upcoming-movies (emitter)="listenEmitter($event)"></app-upcoming-movies>
   <app-watchlist-movies (emitter)="updateUser($event)" [newMovie]="newMovie"></app-watchlist-movies>
   <app-favorite-movies></app-favorite-movies>

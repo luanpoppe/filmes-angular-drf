@@ -7,7 +7,6 @@ import { NewUserType } from 'src/utils/new-user-type';
   providedIn: 'root',
 })
 export class GetMoviesService {
-  watchlistMovies: any;
   favoritesMovies: any;
 
   constructor(private http: HttpClient) {}
@@ -42,11 +41,10 @@ export class GetMoviesService {
       .get('http://localhost:3000/usuarios')
       .pipe(
         map((data: any) => {
-          this.watchlistMovies = data.filter(
+          const watchlist = data.find(
             (user: any) => parseInt(userId) === user.id
-          )[0];
-          this.watchlistMovies = this.watchlistMovies.watchlist;
-          return this.watchlistMovies;
+          )?.watchlist;
+          return watchlist;
         })
       )
       .pipe(take(1));

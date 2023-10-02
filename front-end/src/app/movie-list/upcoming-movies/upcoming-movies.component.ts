@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, EventEmitter, OnInit, Output } from '@angular/core';
 import { ActivatedRoute } from '@angular/router';
 import { GetMoviesService } from 'src/app/shared/get-movies.service';
 import { UserProfileComponent } from 'src/app/sections/user-profile/user-profile.component';
@@ -13,6 +13,7 @@ export class UpcomingMoviesComponent implements OnInit {
   upcomingMovies: any;
   baseUrlImages: any;
   inscricao!: any;
+  @Output() emitter = new EventEmitter<any>();
 
   constructor(
     private service: GetMoviesService,
@@ -38,7 +39,16 @@ export class UpcomingMoviesComponent implements OnInit {
   }
 
   addToWatchlist(movie: any) {
-    this.userProfileComponent.addMovieInWatchlist(movie);
+    if (this.userProfileComponent.currentUser) {
+      if (
+        !this.userProfileComponent.currentUser.watchlist.some(
+          (m) => m.id === movie.id
+        )
+      ) {
+        this.userProfileComponent.addMovieInWatchlist(movie);
+        this.emitter.emit(movie);
+      }
+    }
   }
 
   addToFavorites(movie: any) {

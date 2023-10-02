@@ -21,10 +21,10 @@ const routes: Routes = [
   {
     path: 'pesquisar',
     component: SearchMoviesComponent,
-    canActivate: [AuthGuard],
+    // canActivate: [AuthGuard],
   },
   {
-    path: 'perfil/:id',
+    path: 'perfil',
     component: UserProfileComponent,
     canActivate: [AuthGuard],
     resolve: {

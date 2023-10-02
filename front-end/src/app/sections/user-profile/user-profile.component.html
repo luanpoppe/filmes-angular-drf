@@ -4,7 +4,7 @@
   <!-- <app-movie-list [isUpcomingMovies]="true" [isWatchlist]="false" listTite="Próximas estreias"
     getMovies="upcomingMovies"></app-movie-list>
   <app-movie-list [isWatchlistMovies]="true" listTite="Watchlist" getMovies="userWatchlist"></app-movie-list> -->
-  <app-upcoming-movies></app-upcoming-movies>
-  <app-watchlist-movies></app-watchlist-movies>
+  <app-upcoming-movies (emitter)="listenEmitter($event)"></app-upcoming-movies>
+  <app-watchlist-movies (emitter)="updateUser($event)" [newMovie]="newMovie"></app-watchlist-movies>
   <app-favorite-movies></app-favorite-movies>
 </section>

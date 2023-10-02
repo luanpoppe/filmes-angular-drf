@@ -18,13 +18,13 @@
           "original_language": "en",
           "original_title": "Saw X",
           "overview": "Entre os eventos de “Jogos Mortais” e “Jogos Mortais II”, um doente e desesperado John Kramer viaja para o México para um arriscado e experimental procedimento médico na esperança de uma cura milagrosa para seu câncer — apenas para descobrir que toda a operação é uma farsa para fraudar os mais vulneráveis. Armado com um propósito recém-descoberto, o infame assassino em série retorna ao seu trabalho, virando a mesa contra os vigaristas em sua maneira visceral característica por meio de armadilhas tortuosas, perturbadas e engenhosas.",
-          "popularity": 678.548,
+          "popularity": 949.967,
           "poster_path": "/ch1BGjadaiPU59zYbb6zPUTZtyO.jpg",
           "release_date": "2023-09-26",
           "title": "Jogos Mortais X",
           "video": false,
-          "vote_average": 7.4,
-          "vote_count": 38
+          "vote_average": 7.3,
+          "vote_count": 55
         },
         {
           "adult": false,
@@ -38,13 +38,74 @@
           "original_language": "en",
           "original_title": "The Creator",
           "overview": "Em meio a uma futura guerra entre a raça humana e as forças da inteligência artificial, Joshua, um endurecido ex-agente das forças especiais que lamenta o desaparecimento de sua esposa, é recrutado para caçar e matar o Criador, o indescritível arquiteto da IA avançada que desenvolveu uma arma misteriosa com o poder de acabar com a guerra - e a própria humanidade.",
-          "popularity": 496.806,
+          "popularity": 671.371,
           "poster_path": "/187OBBT5oMQ2XPXgx9F8JhlycvK.jpg",
           "release_date": "2023-09-27",
           "title": "Resistência",
           "video": false,
-          "vote_average": 7.5,
-          "vote_count": 99
+          "vote_average": 7.4,
+          "vote_count": 135
+        },
+        {
+          "adult": false,
+          "backdrop_path": "/53z2fXEKfnNg2uSOPss2unPBGX1.jpg",
+          "genre_ids": [
+            27,
+            9648,
+            53
+          ],
+          "id": 968051,
+          "original_language": "en",
+          "original_title": "The Nun II",
+          "overview": "Quatro anos após os acontecimentos na abadia de St. Carta, a Irmã Irene (Taissa Farmiga) regressa mais uma vez e depara-se com a força demoníaca de Valak, a Freira (Bonnie Aarons).",
+          "popularity": 1692.778,
+          "poster_path": "/jv7lyPfBC1heRWtQUd1gX7Q0wSo.jpg",
+          "release_date": "2023-09-06",
+          "title": "A Freira 2",
+          "video": false,
+          "vote_average": 6.5,
+          "vote_count": 362
+        },
+        {
+          "adult": false,
+          "backdrop_path": "/iiXliCeykkzmJ0Eg9RYJ7F2CWSz.jpg",
+          "genre_ids": [
+            28,
+            9648,
+            53,
+            80
+          ],
+          "id": 762430,
+          "original_language": "en",
+          "original_title": "Retribution",
+          "overview": "Com seus filhos presos no banco de trás e uma bomba que explodirá se eles saírem do carro, um trajeto normal se torna um jogo distorcido de vida ou morte enquanto Matt Turner segue as instruções cada vez mais perigosas de um estranho em uma corrida contra o tempo para salvar sua  família.",
+          "popularity": 1706.372,
+          "poster_path": "/yd0iEtqAXseXQgKf9RjmMaPjUPG.jpg",
+          "release_date": "2023-08-23",
+          "title": "A Chamada",
+          "video": false,
+          "vote_average": 6.8,
+          "vote_count": 262
+        },
+        {
+          "adult": false,
+          "backdrop_path": "/rMvPXy8PUjj1o8o1pzgQbdNCsvj.jpg",
+          "genre_ids": [
+            28,
+            12,
+            53
+          ],
+          "id": 299054,
+          "original_language": "en",
+          "original_title": "Expend4bles",
+          "overview": "Os Mercenários enfrentam um traficante de armas que comanda o poder de um enorme exército privado.",
+          "popularity": 443.124,
+          "poster_path": "/dQxlUkhKGILgq9jbVEe3WPaiW2q.jpg",
+          "release_date": "2023-09-15",
+          "title": "Os Mercenários 4",
+          "video": false,
+          "vote_average": 6.6,
+          "vote_count": 90
         },
         {
           "adult": false,
@@ -57,182 +118,53 @@
           "original_language": "en",
           "original_title": "Sound of Freedom",
           "overview": "A história de Tim Ballard, um ex-agente do governo dos EUA, que largou seu emprego para dedicar sua vida a resgatar crianças de traficantes sexuais globais.",
-          "popularity": 1111.036,
+          "popularity": 1555.45,
           "poster_path": "/2BWhcrlPr6UvSJy5D044Ikq2QxH.jpg",
           "release_date": "2023-07-03",
           "title": "Som da Liberdade",
           "video": false,
           "vote_average": 8,
-          "vote_count": 501
+          "vote_count": 503
         },
         {
           "adult": false,
-          "backdrop_path": "/oTOKHnJRNmZh4JtuE5GJ2tFVpWW.jpg",
-          "belongs_to_collection": null,
-          "budget": 50000000,
-          "genres": [
-            {
-              "id": 80,
-              "name": "Crime"
-            },
-            {
-              "id": 18,
-              "name": "Drama"
-            },
-            {
-              "id": 53,
-              "name": "Thriller"
-            }
-          ],
-          "homepage": "",
-          "id": 1830,
-          "imdb_id": "tt0399295",
-          "original_language": "en",
-          "original_title": "Lord of War",
-          "overview": "Yuri Orlov é um traficante de armas que realiza negócios nos mais variados locais do planeta. Estando constantemente em perigosas zonas de guerra, Yuri tenta sempre se manter um passo a frente de Jack Valentine, um agente da Interpol, e também de seus concorrentes e até mesmo clientes, entre os quais estão alguns dos mais famosos ditadores do planeta.",
-          "popularity": 19.712,
-          "poster_path": "/yLxbDZ1h7wbHo7mkyX5AR9hjODe.jpg",
-          "production_companies": [
-            {
-              "id": 1205,
-              "logo_path": "/wQX3t4qtxm7gBQE3RHuoLghgb73.png",
-              "name": "Endgame Entertainment",
-              "origin_country": "US"
-            },
-            {
-              "id": 1206,
-              "logo_path": null,
-              "name": "Entertainment Manufacturing Company",
-              "origin_country": ""
-            },
-            {
-              "id": 1204,
-              "logo_path": null,
-              "name": "Ascendant Pictures",
-              "origin_country": "US"
-            },
-            {
-              "id": 831,
-              "logo_path": "/vLENXiYTyITnMDrTKabUXhgTKX2.png",
-              "name": "Saturn Films",
-              "origin_country": "US"
-            },
-            {
-              "id": 1208,
-              "logo_path": null,
-              "name": "Rising Star",
-              "origin_country": "US"
-            },
-            {
-              "id": 21938,
-              "logo_path": null,
-              "name": "Copag V",
-              "origin_country": ""
-            },
-            {
-              "id": 827,
-              "logo_path": null,
-              "name": "VIP Medienfonds 3",
-              "origin_country": "DE"
-            },
-            {
-              "id": 137007,
-              "logo_path": null,
-              "name": "Majority Entertainment",
-              "origin_country": ""
-            },
-            {
-              "id": 21,
-              "logo_path": "/5Va1Ie5c4sjfEYqixQ3L8qg7fKu.png",
-              "name": "Metro-Goldwyn-Mayer",
-              "origin_country": "US"
-            }
-          ],
-          "production_countries": [
-            {
-              "iso_3166_1": "FR",
-              "name": "France"
-            },
-            {
-              "iso_3166_1": "US",
-              "name": "United States of America"
-            },
-            {
-              "iso_3166_1": "DE",
-              "name": "Germany"
-            }
-          ],
-          "release_date": "2005-09-16",
-          "revenue": 72617068,
-          "runtime": 122,
-          "spoken_languages": [
-            {
-              "english_name": "Arabic",
-              "iso_639_1": "ar",
-              "name": "العربية"
-            },
-            {
-              "english_name": "German",
-              "iso_639_1": "de",
-              "name": "Deutsch"
-            },
-            {
-              "english_name": "English",
-              "iso_639_1": "en",
-              "name": "English"
-            },
-            {
-              "english_name": "French",
-              "iso_639_1": "fr",
-              "name": "Français"
-            },
-            {
-              "english_name": "Russian",
-              "iso_639_1": "ru",
-              "name": "Pусский"
-            },
-            {
-              "english_name": "Spanish",
-              "iso_639_1": "es",
-              "name": "Español"
-            },
-            {
-              "english_name": "Ukrainian",
-              "iso_639_1": "uk",
-              "name": "Український"
-            },
-            {
-              "english_name": "Turkish",
-              "iso_639_1": "tr",
-              "name": "Türkçe"
-            }
-          ],
-          "status": "Released",
-          "tagline": "A primeira e mais importante regra do tráfico de armas é: nunca leve um tiro com sua própria mercadoria.",
-          "title": "O Senhor das Armas",
-          "video": false,
-          "vote_average": 7.281,
-          "vote_count": 4269
-        },
-        {
-          "adult": false,
-          "backdrop_path": "/fuo26MkENNfKHQ94mebyKfHNQ8P.jpg",
+          "backdrop_path": "/cyQK5IzMXDUS8o84HYbSIFQt1Vy.jpg",
           "genre_ids": [
-            18,
             28,
-            53
+            16,
+            878
           ],
-          "id": 512731,
-          "original_language": "cn",
-          "original_title": "掃毒2 天地對決",
-          "overview": "A financial tycoon, once a triad member, tries to eradicate the drug market while an old accomplice aims to be Hong Kong's first drug lord.",
-          "popularity": 14.006,
-          "poster_path": "/ja9oIIP33Pgm9295Gn67zBz8Vjy.jpg",
-          "release_date": "2019-07-04",
-          "title": "The White Storm 2: Drug Lords",
+          "id": 39102,
+          "original_language": "ja",
+          "original_title": "ドラゴンボールゼット 超スーパーサイヤ人じんだ孫そん悟ご空くう",
+          "overview": "A Super Namekian named Slug comes to invade Earth. But the Z Warriors do their best to stop Slug and his gang.",
+          "popularity": 34.464,
+          "poster_path": "/1lmwZTsqwTtvd3m60pyQfhGM2Ut.jpg",
+          "release_date": "1991-03-19",
+          "title": "Dragon Ball Z: Lord Slug",
           "video": false,
-          "vote_average": 6.6,
-          "vote_count": 34
+          "vote_average": 6.438,
+          "vote_count": 463
+        },
+        {
+          "adult": false,
+          "backdrop_path": "/2u7zbn8EudG6kLlBzUYqP8RyFU4.jpg",
+          "genre_ids": [
+            12,
+            14,
+            28
+          ],
+          "id": 122,
+          "original_language": "en",
+          "original_title": "The Lord of the Rings: The Return of the King",
+          "overview": "Aragorn is revealed as the heir to the ancient kings as he, Gandalf and the other members of the broken fellowship struggle to save Gondor from Sauron's forces. Meanwhile, Frodo and Sam take the ring closer to the heart of Mordor, the dark lord's realm.",
+          "popularity": 102.7,
+          "poster_path": "/rCzpDGLbOoPwLjy3OAm5NUPOTrC.jpg",
+          "release_date": "2003-12-01",
+          "title": "The Lord of the Rings: The Return of the King",
+          "video": false,
+          "vote_average": 8.5,
+          "vote_count": 22349
         },
         {
           "adult": false,
@@ -244,7 +176,7 @@
           "original_language": "en",
           "original_title": "Lord of the Streets",
           "overview": "When Jason Dyson refuses to make his prized fighter throw an MMA match, a notorious gangster collects his debt by killing the fighter and kidnapping Jason's daughter. Now he must train a prisoner to endure five consecutive underground fights to save her.",
-          "popularity": 25.448,
+          "popularity": 23.303,
           "poster_path": "/n9YWVQRc0zw0nwrFcOkOpffZxjc.jpg",
           "release_date": "2022-04-22",
           "title": "Lord of the Streets",
@@ -272,26 +204,6 @@
           "video": false,
           "vote_average": 8,
           "vote_count": 501
-        },
-        {
-          "adult": false,
-          "backdrop_path": "/iQcCAm8hKWZyUntqrvzyEGtXyJl.jpg",
-          "genre_ids": [
-            878,
-            28,
-            53
-          ],
-          "id": 670292,
-          "original_language": "en",
-          "original_title": "The Creator",
-          "overview": "Em meio a uma futura guerra entre a raça humana e as forças da inteligência artificial, Joshua, um endurecido ex-agente das forças especiais que lamenta o desaparecimento de sua esposa, é recrutado para caçar e matar o Criador, o indescritível arquiteto da IA avançada que desenvolveu uma arma misteriosa com o poder de acabar com a guerra - e a própria humanidade.",
-          "popularity": 496.806,
-          "poster_path": "/187OBBT5oMQ2XPXgx9F8JhlycvK.jpg",
-          "release_date": "2023-09-27",
-          "title": "Resistência",
-          "video": false,
-          "vote_average": 7.5,
-          "vote_count": 99
         },
         {
           "adult": false,
@@ -384,41 +296,61 @@
         },
         {
           "adult": false,
-          "backdrop_path": "/cyQK5IzMXDUS8o84HYbSIFQt1Vy.jpg",
+          "backdrop_path": "/A0IRBPPpwxRsdmglpPQ0yo0FgLQ.jpg",
           "genre_ids": [
             28,
-            16,
-            878
+            35
           ],
-          "id": 39102,
-          "original_language": "ja",
-          "original_title": "ドラゴンボールゼット 超スーパーサイヤ人じんだ孫そん悟ご空くう",
-          "overview": "A Super Namekian named Slug comes to invade Earth. But the Z Warriors do their best to stop Slug and his gang.",
-          "popularity": 31.426,
-          "poster_path": "/1lmwZTsqwTtvd3m60pyQfhGM2Ut.jpg",
-          "release_date": "1991-03-19",
-          "title": "Dragon Ball Z: Lord Slug",
+          "id": 16407,
+          "original_language": "cn",
+          "original_title": "龍少爺",
+          "overview": "Dragon and his madcap pal Cowboy spend their days getting into mischief, frustrating the elders, chasing girls, and competing in the village sport. When Dragon overhears a fiendish plot by smugglers to sell China's national treasures overseas, the pair leap into action. Also, Cowboy's wealthy father is kidnapped by the villainous and lethal Big Boss, and the scene is set for a furious martial arts showdown.",
+          "popularity": 15.59,
+          "poster_path": "/qjQhm2jwV4DSTauOydFJVhVyMS3.jpg",
+          "release_date": "1982-01-21",
+          "title": "Dragon Lord",
           "video": false,
-          "vote_average": 6.438,
-          "vote_count": 463
+          "vote_average": 6.264,
+          "vote_count": 110
         },
         {
           "adult": false,
-          "backdrop_path": "/g8Yytnby0hIPft5l56mgJtZyR1k.jpg",
+          "backdrop_path": "/8ZTVqvKDQ8emSGUEMjsS4yHAwrp.jpg",
           "genre_ids": [
-            28
+            28,
+            878,
+            12
           ],
-          "id": 965839,
+          "id": 27205,
           "original_language": "en",
-          "original_title": "Lord of the Streets",
-          "overview": "When Jason Dyson refuses to make his prized fighter throw an MMA match, a notorious gangster collects his debt by killing the fighter and kidnapping Jason's daughter. Now he must train a prisoner to endure five consecutive underground fights to save her.",
-          "popularity": 25.448,
-          "poster_path": "/n9YWVQRc0zw0nwrFcOkOpffZxjc.jpg",
-          "release_date": "2022-04-22",
-          "title": "Lord of the Streets",
+          "original_title": "Inception",
+          "overview": "Cobb, a skilled thief who commits corporate espionage by infiltrating the subconscious of his targets is offered a chance to regain his old life as payment for a task considered to be impossible: \"inception\", the implantation of another person's idea into a target's subconscious.",
+          "popularity": 72.888,
+          "poster_path": "/oYuLEt3zVCKq57qu2F8dT7NIa6f.jpg",
+          "release_date": "2010-07-15",
+          "title": "Inception",
           "video": false,
-          "vote_average": 5.238,
-          "vote_count": 65
+          "vote_average": 8.364,
+          "vote_count": 34511
+        },
+        {
+          "adult": false,
+          "backdrop_path": "/yLfUS9nFmyrYsntznhvxpZMrdtl.jpg",
+          "genre_ids": [
+            27,
+            14
+          ],
+          "id": 8973,
+          "original_language": "en",
+          "original_title": "Lord of Illusions",
+          "overview": "During a routine case in L.A., NY private investigator Harry D'Amour stumbles over members of a fanatic cult who are preparing for the resurrection of their leader Nix, a powerful magician who was killed 13 years earlier.",
+          "popularity": 10.105,
+          "poster_path": "/miQREwapDUNwfInokjeVLt8BiNM.jpg",
+          "release_date": "1995-08-25",
+          "title": "Lord of Illusions",
+          "video": false,
+          "vote_average": 6,
+          "vote_count": 286
         }
       ]
     },

@@ -2,7 +2,7 @@
   <app-sub-titles [content]="listTite" class="text-center"></app-sub-titles>
   <ul>
     <div class="upcoming-movies">
-      <li *ngFor="let movie of watchlistMovies ">
+      <li *ngFor="let movie of currentUser?.watchlist ">
         <a [routerLink]="'/filme/' + movie.id">
           <img src="{{ baseUrlImages }}/{{ movie.poster_path }}" alt="{{ movie.title }}">
         </a>

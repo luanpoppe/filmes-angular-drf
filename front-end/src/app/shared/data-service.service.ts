@@ -6,28 +6,29 @@ import { BehaviorSubject, take } from 'rxjs';
 })
 export class DataService {
   iLoggedIn!: boolean;
-
-  constructor() {}
-
   // Criando variável global de id
   private idSource = new BehaviorSubject<string | number | null>(null);
 
-  idCurrentValue = this.idSource.asObservable().pipe(take(1));
+  constructor() {
+    this.idSource = new BehaviorSubject<any>(localStorage.getItem('userId'));
+  }
+
+  idCurrentValue = this.idSource.asObservable();
 
   idChangeValue(newValue: any) {
+    localStorage.setItem('userId', newValue);
     this.idSource.next(newValue);
+  }
+
+  getUserId() {
+    return this.idSource.value;
   }
 
   // Método simples apenas para saber se o usuário está logado baseado no valor do id:
   isUserLoggedIn() {
-    this.idCurrentValue.subscribe((data) => {
-      if (data === null) {
-        this.iLoggedIn = false;
-      } else {
-        this.iLoggedIn = true;
-      }
-      return this.iLoggedIn;
-    });
-    return this.iLoggedIn;
+    if (this.getUserId()) {
+      return true;
+    }
+    return false;
   }
 }

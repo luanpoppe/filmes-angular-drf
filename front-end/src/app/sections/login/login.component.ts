@@ -79,6 +79,7 @@ export class LoginComponent implements OnInit {
             // Se password correto:
             if (isPasswordCorrect) {
               // Pega o id do usuário e redireciona para sua página
+              console.log('login deve ser feito');
               this.userId = filterUsers[0].id;
               this.dataService.idChangeValue(this.userId);
               this.router.navigate([`/perfil/${this.userId}`]);

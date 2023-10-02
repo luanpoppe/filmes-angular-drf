@@ -1,6 +1,6 @@
 <nav class="navbar navbar-expand-lg">
   <div class="container-fluid">
-    <a class="navbar-brand" [routerLink]="localIsLoggedIn ? '/perfil/' + userId : '/'">
+    <a class="navbar-brand" [routerLink]="localIsLoggedIn ? '/perfil' : '/'">
       <img src="https://solosbrasil.com/wp-content/uploads/2021/05/logo-do-site.svg" alt="Logo" width="30" height="24"
         class="d-inline-block align-text-top me-2">
       <h1 class="d-inline-block fs-2">Filmes - Solos</h1>
@@ -15,7 +15,7 @@
           <a *ngIf="!localIsLoggedIn" class="nav-link active" aria-current="page" routerLink="/">Home</a>
         </li>
         <li *ngIf="localIsLoggedIn" class="nav-item fs-5">
-          <a class="nav-link active" aria-current="page" [routerLink]="'/perfil/' + userId">Sua Página</a>
+          <a class="nav-link active" aria-current="page" [routerLink]="'/perfil'">Sua Página</a>
         </li>
         <li *ngIf="!localIsLoggedIn" class="nav-item fs-5">
           <a class="nav-link active" aria-current="page" routerLink="login">Login</a>

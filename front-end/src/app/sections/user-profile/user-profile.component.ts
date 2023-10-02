@@ -16,6 +16,7 @@ export class UserProfileComponent implements OnInit {
   currentUser!: NewUserType;
   id!: any;
   watchlistMovies!: any;
+  newMovie: any;
 
   constructor(
     private route: ActivatedRoute,
@@ -45,10 +46,11 @@ export class UserProfileComponent implements OnInit {
   }
 
   addMovieInWatchlist(movie: any) {
-    this.currentUser.watchlist?.push(movie);
-
-    this.serviceAddMovies.addMovie(this.currentUser, this.id).subscribe();
     console.log(this.currentUser);
+    if (!this.currentUser.watchlist.some((m) => m.id === movie.id)) {
+      this.currentUser.watchlist?.push(movie);
+      this.serviceAddMovies.addMovie(this.currentUser, this.id).subscribe();
+    }
   }
 
   addMovieInFavorites(movie: any) {
@@ -56,5 +58,15 @@ export class UserProfileComponent implements OnInit {
 
     this.serviceAddMovies.addMovie(this.currentUser, this.id).subscribe();
     console.log(this.currentUser);
+  }
+
+  listenEmitter(event: any) {
+    console.log(this.currentUser);
+    this.newMovie = event;
+  }
+
+  updateUser(event: any) {
+    console.log('Atualizando usuário', this.currentUser);
+    this.currentUser = event;
   }
 }

@@ -5,6 +5,7 @@ import { GetUsersService } from 'src/app/shared/get-users.service';
 import { RemoveMoviesService } from 'src/app/shared/remove-movies.service';
 import { UserProfileComponent } from 'src/app/sections/user-profile/user-profile.component';
 import { NewUserType } from 'src/utils/new-user-type';
+import { DataService } from 'src/app/shared/data-service.service';
 
 @Component({
   selector: 'app-favorite-movies',
@@ -24,13 +25,12 @@ export class FavoriteMoviesComponent implements OnInit {
     private userProfileComponent: UserProfileComponent,
     private service: GetMoviesService,
     private serviceRemoveMovies: RemoveMoviesService,
-    private serviceGetusers: GetUsersService
+    private serviceGetusers: GetUsersService,
+    private dataService: DataService
   ) {}
 
   ngOnInit(): void {
-    this.route.params.subscribe((params) => {
-      this.id = params['id'];
-    });
+    this.id = this.dataService.getUserId();
 
     this.serviceGetusers.getUsers().subscribe((data: any) => {
       this.allUsers = data;

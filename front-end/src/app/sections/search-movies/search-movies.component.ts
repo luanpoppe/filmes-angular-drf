@@ -18,8 +18,6 @@ export class SearchMoviesComponent implements OnInit {
   baseUrlImages: any;
   moviesResult: any;
   userId!: any;
-  allUsers!: NewUserType[];
-  currentUser!: NewUserType;
 
   constructor(
     private formBuilder: FormBuilder,
@@ -28,7 +26,10 @@ export class SearchMoviesComponent implements OnInit {
     private dataService: DataService,
     private serviceAddMovie: AddMoviesService,
     private serviceGetUser: GetUsersService
-  ) {}
+  ) {
+    // Pega a variável global que diz o id do usuário
+    this.userId = this.dataService.getUserId();
+  }
 
   ngOnInit(): void {
     this.formulario = this.formBuilder.group({
@@ -52,46 +53,28 @@ export class SearchMoviesComponent implements OnInit {
   }
 
   addToWatchlistFromSearch(movie: any) {
-    // Pega a variável global que diz o id do usuário
-    this.dataService.idCurrentValue.subscribe((id) => {
-      this.userId = id;
-      // Retorna o objeto do usuário atual
-      this.serviceGetUser.getUsers().subscribe((data: any) => {
-        this.allUsers = data;
-        this.currentUser = this.allUsers.filter(
-          (u: NewUserType) => u.id == this.userId
-        )[0];
+    // Retorna o objeto do usuário atual
+    this.serviceGetUser.getUsers().subscribe((data: any) => {
+      const currentUser = data.find((u: NewUserType) => u.id == this.userId);
 
-        // Adiciona o filme em questão ao objeto do usuário
-        this.currentUser.watchlist.push(movie);
+      // Adiciona o filme em questão ao objeto do usuário
+      currentUser.watchlist.push(movie);
 
-        // Envia o novo objeto do usuário atualizado para o servidor
-        this.serviceAddMovie
-          .addMovie(this.currentUser, this.userId)
-          .subscribe();
-      });
+      // Envia o novo objeto do usuário atualizado para o servidor
+      this.serviceAddMovie.addMovie(currentUser, this.userId).subscribe();
     });
   }
 
   addToFavoritesFromSearch(movie: any) {
-    // Pega a variável global que diz o id do usuário
-    this.dataService.idCurrentValue.subscribe((id) => {
-      this.userId = id;
-      // Retorna o objeto do usuário atual
-      this.serviceGetUser.getUsers().subscribe((data: any) => {
-        this.allUsers = data;
-        this.currentUser = this.allUsers.filter(
-          (u: NewUserType) => u.id == this.userId
-        )[0];
+    // Retorna o objeto do usuário atual
+    this.serviceGetUser.getUsers().subscribe((data: any) => {
+      const currentUser = data.find((u: NewUserType) => u.id == this.userId);
 
-        // Adiciona o filme em questão ao objeto do usuário
-        this.currentUser.favorites.push(movie);
+      // Adiciona o filme em questão ao objeto do usuário
+      currentUser.favorites.push(movie);
 
-        // Envia o novo objeto do usuário atualizado para o servidor
-        this.serviceAddMovie
-          .addMovie(this.currentUser, this.userId)
-          .subscribe();
-      });
+      // Envia o novo objeto do usuário atualizado para o servidor
+      this.serviceAddMovie.addMovie(currentUser, this.userId).subscribe();
     });
   }
 }

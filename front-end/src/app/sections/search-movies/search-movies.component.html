@@ -15,13 +15,17 @@
       <app-button-main class="col-2 d-flex justify-content-center" buttonContent="Pesquisar"
         buttonType="submit"></app-button-main>
     </div>
+
     <!-- Filmes pegos do resultado da pesquisa -->
     <div class="row ">
       <div *ngIf="moviesResult" class="movie-list-background">
         <ul>
           <div class="movies-result">
-            <li *ngFor="let movie of moviesResult" class="">
-              <a [routerLink]="'/filme/' + movie.id">
+            <li *ngFor="let movie of moviesResult">
+              <!-- <div>{{ movie.title }} ({{ movie.release_date.split('-')[0]
+                }})</div> -->
+              <a [routerLink]="'/filme/' + movie.id" title="{{ movie.title }} ({{ movie.release_date.split('-')[0]
+                }})">
                 <img src="{{ baseUrlImages }}/{{ movie.poster_path }}" alt="{{ movie.title }}">
               </a>
               <div class="row container-buttons">

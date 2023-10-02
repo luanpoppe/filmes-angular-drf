@@ -19,7 +19,7 @@ export class NavbarComponent implements OnInit {
       if (event instanceof NavigationStart) {
         // Aqui é onde eu checo de fato se o usuário está logado e retorno seu id
         this.localIsLoggedIn = this.service.isUserLoggedIn();
-        this.service.idCurrentValue.subscribe((data) => (this.userId = data));
+        this.userId = this.service.getUserId();
       }
     });
   }

@@ -17,7 +17,7 @@ export class LoginComponent implements OnInit {
   isPasswordWrong!: boolean;
   userEmail!: string;
   userPassword!: string;
-  doUserExist!: boolean;
+  doUserExist: boolean = true;
   userId!: string | number;
 
   constructor(
@@ -82,7 +82,7 @@ export class LoginComponent implements OnInit {
               console.log('login deve ser feito');
               this.userId = filterUsers[0].id;
               this.dataService.idChangeValue(this.userId);
-              this.router.navigate([`/perfil/${this.userId}`]);
+              this.router.navigate([`/perfil`]);
             }
             // Se password errado:
             if (!isPasswordCorrect) {

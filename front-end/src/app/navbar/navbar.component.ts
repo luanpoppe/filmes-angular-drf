@@ -23,4 +23,10 @@ export class NavbarComponent implements OnInit {
       }
     });
   }
+
+  onLogout() {
+    console.log('user sai da conta');
+    localStorage.removeItem('userId');
+    location.reload();
+  }
 }

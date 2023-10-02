@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { ActivatedRoute } from '@angular/router';
 import { GetMoviesService } from 'src/app/shared/get-movies.service';
-import { UserProfileComponent } from 'src/app/user-profile/user-profile.component';
+import { UserProfileComponent } from 'src/app/sections/user-profile/user-profile.component';
 
 @Component({
   selector: 'app-upcoming-movies',

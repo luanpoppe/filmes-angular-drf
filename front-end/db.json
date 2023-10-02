@@ -213,6 +213,44 @@
           "video": false,
           "vote_average": 7.281,
           "vote_count": 4269
+        },
+        {
+          "adult": false,
+          "backdrop_path": "/fuo26MkENNfKHQ94mebyKfHNQ8P.jpg",
+          "genre_ids": [
+            18,
+            28,
+            53
+          ],
+          "id": 512731,
+          "original_language": "cn",
+          "original_title": "掃毒2 天地對決",
+          "overview": "A financial tycoon, once a triad member, tries to eradicate the drug market while an old accomplice aims to be Hong Kong's first drug lord.",
+          "popularity": 14.006,
+          "poster_path": "/ja9oIIP33Pgm9295Gn67zBz8Vjy.jpg",
+          "release_date": "2019-07-04",
+          "title": "The White Storm 2: Drug Lords",
+          "video": false,
+          "vote_average": 6.6,
+          "vote_count": 34
+        },
+        {
+          "adult": false,
+          "backdrop_path": "/g8Yytnby0hIPft5l56mgJtZyR1k.jpg",
+          "genre_ids": [
+            28
+          ],
+          "id": 965839,
+          "original_language": "en",
+          "original_title": "Lord of the Streets",
+          "overview": "When Jason Dyson refuses to make his prized fighter throw an MMA match, a notorious gangster collects his debt by killing the fighter and kidnapping Jason's daughter. Now he must train a prisoner to endure five consecutive underground fights to save her.",
+          "popularity": 25.448,
+          "poster_path": "/n9YWVQRc0zw0nwrFcOkOpffZxjc.jpg",
+          "release_date": "2022-04-22",
+          "title": "Lord of the Streets",
+          "video": false,
+          "vote_average": 5.238,
+          "vote_count": 65
         }
       ],
       "favorites": [
@@ -343,6 +381,44 @@
           "video": false,
           "vote_average": 8.364,
           "vote_count": 34506
+        },
+        {
+          "adult": false,
+          "backdrop_path": "/cyQK5IzMXDUS8o84HYbSIFQt1Vy.jpg",
+          "genre_ids": [
+            28,
+            16,
+            878
+          ],
+          "id": 39102,
+          "original_language": "ja",
+          "original_title": "ドラゴンボールゼット 超スーパーサイヤ人じんだ孫そん悟ご空くう",
+          "overview": "A Super Namekian named Slug comes to invade Earth. But the Z Warriors do their best to stop Slug and his gang.",
+          "popularity": 31.426,
+          "poster_path": "/1lmwZTsqwTtvd3m60pyQfhGM2Ut.jpg",
+          "release_date": "1991-03-19",
+          "title": "Dragon Ball Z: Lord Slug",
+          "video": false,
+          "vote_average": 6.438,
+          "vote_count": 463
+        },
+        {
+          "adult": false,
+          "backdrop_path": "/g8Yytnby0hIPft5l56mgJtZyR1k.jpg",
+          "genre_ids": [
+            28
+          ],
+          "id": 965839,
+          "original_language": "en",
+          "original_title": "Lord of the Streets",
+          "overview": "When Jason Dyson refuses to make his prized fighter throw an MMA match, a notorious gangster collects his debt by killing the fighter and kidnapping Jason's daughter. Now he must train a prisoner to endure five consecutive underground fights to save her.",
+          "popularity": 25.448,
+          "poster_path": "/n9YWVQRc0zw0nwrFcOkOpffZxjc.jpg",
+          "release_date": "2022-04-22",
+          "title": "Lord of the Streets",
+          "video": false,
+          "vote_average": 5.238,
+          "vote_count": 65
         }
       ]
     },

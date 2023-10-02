@@ -1,5 +1,6 @@
 import { HttpClient, HttpHeaders } from '@angular/common/http';
 import { Injectable } from '@angular/core';
+import { take } from 'rxjs';
 
 @Injectable({
   providedIn: 'root',
@@ -14,20 +15,24 @@ export class GetMovieInfoService {
   });
 
   getMovieInfoById(movieId: string | number) {
-    return this.http.get(
-      'https://api.themoviedb.org/3/movie/' + movieId + '?language=pt-BR',
-      {
-        headers: this.headers,
-      }
-    );
+    return this.http
+      .get(
+        'https://api.themoviedb.org/3/movie/' + movieId + '?language=pt-BR',
+        {
+          headers: this.headers,
+        }
+      )
+      .pipe(take(1));
   }
 
   GetCastCrewById(movieId: string | number) {
-    return this.http.get(
-      `https://api.themoviedb.org/3/movie/${movieId}/credits?language=pt-BR`,
-      {
-        headers: this.headers,
-      }
-    );
+    return this.http
+      .get(
+        `https://api.themoviedb.org/3/movie/${movieId}/credits?language=pt-BR`,
+        {
+          headers: this.headers,
+        }
+      )
+      .pipe(take(1));
   }
 }

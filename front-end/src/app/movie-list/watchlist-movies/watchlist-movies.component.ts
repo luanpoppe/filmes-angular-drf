@@ -5,7 +5,7 @@ import { GetMoviesService } from 'src/app/shared/get-movies.service';
 import { GetUsersService } from 'src/app/shared/get-users.service';
 import { RemoveMoviesService } from 'src/app/shared/remove-movies.service';
 import { NewUserType } from 'src/utils/new-user-type';
-import { UserProfileComponent } from 'src/app/user-profile/user-profile.component';
+import { UserProfileComponent } from 'src/app/sections/user-profile/user-profile.component';
 
 @Component({
   selector: 'app-watchlist-movies',

@@ -1,16 +1,10 @@
-@use "../../utils/colors.scss";
-@use "../../utils/mixins.scss";
-
+@use "../../../utils/colors.scss";
+@use "../../../utils/mixins.scss";
 
 @include mixins.page-section();
 
 section {
-  div {
-    width: 360px;
-  }
-
   .login-container {
     @include mixins.section-title()
   }
-
 }

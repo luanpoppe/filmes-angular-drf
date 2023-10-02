@@ -1,5 +1,5 @@
 import { Injectable } from '@angular/core';
-import { BehaviorSubject } from 'rxjs';
+import { BehaviorSubject, take } from 'rxjs';
 
 @Injectable({
   providedIn: 'root',
@@ -12,7 +12,7 @@ export class DataService {
   // Criando variável global de id
   private idSource = new BehaviorSubject<string | number | null>(null);
 
-  idCurrentValue = this.idSource.asObservable();
+  idCurrentValue = this.idSource.asObservable().pipe(take(1));
 
   idChangeValue(newValue: any) {
     this.idSource.next(newValue);

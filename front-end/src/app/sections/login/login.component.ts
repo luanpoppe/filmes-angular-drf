@@ -1,9 +1,9 @@
-import { Component, EventEmitter, OnInit } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 import { FormGroup, FormBuilder, Validators } from '@angular/forms';
-import { GetUsersService } from '../shared/get-users.service';
+import { GetUsersService } from '../../shared/get-users.service';
 import { NewUserType } from 'src/utils/new-user-type';
 import { Router } from '@angular/router';
-import { DataService } from '../shared/data-service.service';
+import { DataService } from '../../shared/data-service.service';
 
 @Component({
   selector: 'app-login',

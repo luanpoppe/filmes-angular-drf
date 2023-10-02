@@ -1,10 +1,10 @@
 import { Component, Input, OnInit } from '@angular/core';
-import { AddNewUserService } from '../shared/add-new-user.service';
+import { AddNewUserService } from '../../shared/add-new-user.service';
 import { ActivatedRoute } from '@angular/router';
-import { GetUsersService } from '../shared/get-users.service';
+import { GetUsersService } from '../../shared/get-users.service';
 import { NewUserType } from 'src/utils/new-user-type';
-import { AddMoviesService } from '../shared/add-movies.service';
-import { GetMoviesService } from '../shared/get-movies.service';
+import { AddMoviesService } from '../../shared/add-movies.service';
+import { GetMoviesService } from '../../shared/get-movies.service';
 
 @Component({
   selector: 'app-user-profile',

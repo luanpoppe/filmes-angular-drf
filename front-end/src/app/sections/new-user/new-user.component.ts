@@ -1,9 +1,9 @@
 import { FormGroup, FormBuilder, Validators } from '@angular/forms';
 import { Component, OnInit } from '@angular/core';
 import { NewUserType } from 'src/utils/new-user-type';
-import { AddNewUserService } from '../shared/add-new-user.service';
-import { GetUsersService } from '../shared/get-users.service';
-import { FormValidations } from '../shared/form-validations';
+import { AddNewUserService } from '../../shared/add-new-user.service';
+import { GetUsersService } from '../../shared/get-users.service';
+import { FormValidations } from '../../shared/form-validations';
 import { Router } from '@angular/router';
 
 @Component({

@@ -2,10 +2,10 @@ import { filter } from 'rxjs';
 import { Component, OnInit } from '@angular/core';
 import { FormBuilder, FormGroup } from '@angular/forms';
 import { Router } from '@angular/router';
-import { GetMoviesService } from '../shared/get-movies.service';
-import { DataService } from '../shared/data-service.service';
-import { AddMoviesService } from '../shared/add-movies.service';
-import { GetUsersService } from '../shared/get-users.service';
+import { GetMoviesService } from '../../shared/get-movies.service';
+import { DataService } from '../../shared/data-service.service';
+import { AddMoviesService } from '../../shared/add-movies.service';
+import { GetUsersService } from '../../shared/get-users.service';
 import { NewUserType } from 'src/utils/new-user-type';
 
 @Component({

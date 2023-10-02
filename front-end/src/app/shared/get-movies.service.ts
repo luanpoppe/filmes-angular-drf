@@ -1,6 +1,6 @@
 import { HttpClient, HttpHeaders } from '@angular/common/http';
 import { Injectable } from '@angular/core';
-import { Observable, filter, map, tap } from 'rxjs';
+import { Observable, filter, map, take, tap } from 'rxjs';
 import { NewUserType } from 'src/utils/new-user-type';
 
 @Injectable({
@@ -19,50 +19,62 @@ export class GetMoviesService {
   });
 
   getUpcomingMovies() {
-    return this.http.get(
-      'https://api.themoviedb.org/3/movie/upcoming?language=pt-BR&page=1',
-      {
-        headers: this.headers,
-      }
-    );
+    return this.http
+      .get(
+        'https://api.themoviedb.org/3/movie/upcoming?language=pt-BR&page=1',
+        {
+          headers: this.headers,
+        }
+      )
+      .pipe(take(1));
   }
 
   getMovieConfiguration() {
-    return this.http.get('https://api.themoviedb.org/3/configuration', {
-      headers: this.headers,
-    });
+    return this.http
+      .get('https://api.themoviedb.org/3/configuration', {
+        headers: this.headers,
+      })
+      .pipe(take(1));
   }
 
   getUserWatchlist(userId: any) {
-    return this.http.get('http://localhost:3000/usuarios').pipe(
-      map((data: any) => {
-        this.watchlistMovies = data.filter(
-          (user: any) => parseInt(userId) === user.id
-        )[0];
-        this.watchlistMovies = this.watchlistMovies.watchlist;
-        return this.watchlistMovies;
-      })
-    );
+    return this.http
+      .get('http://localhost:3000/usuarios')
+      .pipe(
+        map((data: any) => {
+          this.watchlistMovies = data.filter(
+            (user: any) => parseInt(userId) === user.id
+          )[0];
+          this.watchlistMovies = this.watchlistMovies.watchlist;
+          return this.watchlistMovies;
+        })
+      )
+      .pipe(take(1));
   }
 
   getUserFavorites(userId: any) {
-    return this.http.get('http://localhost:3000/usuarios').pipe(
-      map((data: any) => {
-        this.favoritesMovies = data.filter(
-          (user: any) => parseInt(userId) === user.id
-        )[0];
-        this.favoritesMovies = this.favoritesMovies.favorites;
-        return this.favoritesMovies;
-      })
-    );
+    return this.http
+      .get('http://localhost:3000/usuarios')
+      .pipe(
+        map((data: any) => {
+          this.favoritesMovies = data.filter(
+            (user: any) => parseInt(userId) === user.id
+          )[0];
+          this.favoritesMovies = this.favoritesMovies.favorites;
+          return this.favoritesMovies;
+        })
+      )
+      .pipe(take(1));
   }
 
   getSearchedMovies(movieSearched: string | number) {
-    return this.http.get(
-      `https://api.themoviedb.org/3/search/movie?query=${movieSearched}&include_adult=false&language=en-US&page=1`,
-      {
-        headers: this.headers,
-      }
-    );
+    return this.http
+      .get(
+        `https://api.themoviedb.org/3/search/movie?query=${movieSearched}&include_adult=false&language=en-US&page=1`,
+        {
+          headers: this.headers,
+        }
+      )
+      .pipe(take(1));
   }
 }

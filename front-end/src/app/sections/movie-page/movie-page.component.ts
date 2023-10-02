@@ -1,15 +1,15 @@
 import { Component, OnInit } from '@angular/core';
 import { ActivatedRoute } from '@angular/router';
-import { GetMovieInfoService } from '../shared/get-movie-info.service';
+import { GetMovieInfoService } from '../../shared/get-movie-info.service';
 import {
   CastAndCrewInfo,
   MovieInfo,
   NewUserType,
 } from 'src/utils/new-user-type';
-import { GetMoviesService } from '../shared/get-movies.service';
-import { DataService } from '../shared/data-service.service';
-import { GetUsersService } from '../shared/get-users.service';
-import { AddMoviesService } from '../shared/add-movies.service';
+import { GetMoviesService } from '../../shared/get-movies.service';
+import { DataService } from '../../shared/data-service.service';
+import { GetUsersService } from '../../shared/get-users.service';
+import { AddMoviesService } from '../../shared/add-movies.service';
 
 @Component({
   selector: 'app-movie-page',

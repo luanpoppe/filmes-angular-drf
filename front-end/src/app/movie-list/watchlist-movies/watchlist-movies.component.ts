@@ -78,6 +78,7 @@ export class WatchlistMoviesComponent implements OnInit, OnChanges {
     this.serviceGetusers.getUsers().subscribe((data: any) => {
       this.currentUser = data.find((u: NewUserType) => u.id == this.id);
       this.watchlistMovies = this.currentUser.watchlist;
+      console.log(this.watchlistMovies);
     });
   }
 

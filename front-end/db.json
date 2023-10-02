@@ -417,6 +417,14 @@
       "password": "123",
       "watchlist": [],
       "favorites": []
+    },
+    {
+      "id": 5,
+      "nome": "Usuário 5",
+      "email": "user5@email.com",
+      "password": "123",
+      "watchlist": [],
+      "favorites": []
     }
   ]
 }

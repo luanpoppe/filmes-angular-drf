@@ -121,7 +121,7 @@ export class NewUserComponent implements OnInit {
       this.newId += 1;
       this.newUser = {
         id: this.newId,
-        nome: this.formulario.value.nome,
+        nome: this.formulario.value.name,
         email: this.formulario.value.email,
         password: this.formulario.value.password,
         watchlist: [],

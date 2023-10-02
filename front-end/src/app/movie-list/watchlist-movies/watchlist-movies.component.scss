@@ -1,4 +1,10 @@
 @use "../../../utils/mixins.scss";
+@use "../../../utils/colors.scss";
 
 
-@include mixins.movie-lists()
+@include mixins.movie-lists();
+
+.no-movies-message {
+  text-align: center;
+  color: colors.$white;
+}

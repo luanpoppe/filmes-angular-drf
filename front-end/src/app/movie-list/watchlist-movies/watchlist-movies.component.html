@@ -2,7 +2,7 @@
   <app-sub-titles [content]="listTite" class="text-center"></app-sub-titles>
   <ul>
     <div class="upcoming-movies">
-      <li *ngFor="let movie of currentUser?.watchlist ">
+      <li *ngFor="let movie of currentUser?.watchlist">
         <a [routerLink]="'/filme/' + movie.id">
           <img src="{{ baseUrlImages }}/{{ movie.poster_path }}" alt="{{ movie.title }}">
         </a>
@@ -12,3 +12,5 @@
           Favoritos</button>
       </li>
     </div>
+    <div class="no-movies-message" *ngIf="watchlistMovies < 1">Parece que não há nada por aqui. Por que não começa
+      adicionando um filme à sua watchlist?</div>

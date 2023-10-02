@@ -5,6 +5,7 @@ import { LoginComponent } from './login.component';
 import { ComponentsModule } from '../../components/components.module';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { MovieListModule } from 'src/app/movie-list/movie-list.module';
+import { RouterModule } from '@angular/router';
 
 @NgModule({
   declarations: [UserProfileComponent, LoginComponent],
@@ -15,6 +16,7 @@ import { MovieListModule } from 'src/app/movie-list/movie-list.module';
     ReactiveFormsModule,
     ComponentsModule,
     MovieListModule,
+    RouterModule,
   ],
 })
 export class LoginModule {}

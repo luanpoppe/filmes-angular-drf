@@ -28,6 +28,7 @@ export class MoviePageComponent implements OnInit {
   movieOriginalTitle!: string;
   movieLaunchYear!: string;
   movieOverview!: string;
+  moviePosterPath!: string;
 
   castAndCrew!: CastAndCrewInfo;
   director!: string;
@@ -46,12 +47,13 @@ export class MoviePageComponent implements OnInit {
       this.id = params['id'];
     });
 
-    this.service.getMovieInfoById(this.id).subscribe((data: any) => {
+    this.service.getMovieInfoById(this.id)?.subscribe((data: any) => {
       this.movieInfo = data;
       this.movieTitle = this.movieInfo.title;
       this.movieOriginalTitle = this.movieInfo.original_title;
       this.movieLaunchYear = this.movieInfo.release_date.split('-')[0];
       this.movieOverview = this.movieInfo.overview;
+      this.moviePosterPath = this.movieInfo.poster_path;
     });
 
     this.service.GetCastCrewById(this.id).subscribe((data: any) => {

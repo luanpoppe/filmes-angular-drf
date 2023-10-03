@@ -7,6 +7,8 @@ import { SectionsTitleComponent } from './sections-title/sections-title.componen
 import { SubTitlesComponent } from './sub-titles/sub-titles.component';
 import { NgbToastModule } from '@ng-bootstrap/ng-bootstrap';
 import { NgbdToastInline } from './toast/toast.component';
+import { MoviesCommentsComponent } from './movies-comments/movies-comments.component';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
@@ -16,8 +18,9 @@ import { NgbdToastInline } from './toast/toast.component';
     SectionsTitleComponent,
     SubTitlesComponent,
     NgbdToastInline,
+    MoviesCommentsComponent,
   ],
-  imports: [CommonModule, NgbToastModule],
+  imports: [CommonModule, NgbToastModule, FormsModule, ReactiveFormsModule],
   exports: [
     AlertSuccessComponent,
     ButtonMainComponent,
@@ -25,6 +28,7 @@ import { NgbdToastInline } from './toast/toast.component';
     SectionsTitleComponent,
     SubTitlesComponent,
     NgbdToastInline,
+    MoviesCommentsComponent,
   ],
 })
 export class ComponentsModule {}

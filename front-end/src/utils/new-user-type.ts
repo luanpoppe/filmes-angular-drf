@@ -109,3 +109,13 @@ export interface CastAndCrewInfo {
     job: string;
   }>;
 }
+
+// MOVIE COMMENTS
+export interface MovieComments {
+  id: number;
+  commentsInfo: {
+    userName: string;
+    date: string;
+    content: string;
+  };
+}

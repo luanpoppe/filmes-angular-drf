@@ -1,0 +1,32 @@
+<section class="mt-3">
+  <form [formGroup]="formulario" (ngSubmit)="onCommentSubmit()">
+    <label class="row" for="newComment">
+      <h5>Novo comentário:</h5>
+    </label>
+    <div class="row">
+      <textarea class="form-control col w-75" formControlName="newComment" id="newComment"></textarea>
+    </div>
+    <div class="row">
+      <app-button-main buttonType="submit" buttonContent="Enviar" class="col"></app-button-main>
+    </div>
+  </form>
+  <app-sub-titles class="" content="Comentários: "></app-sub-titles>
+
+  <!-- <div *ngFor="let comment of movieComments.commentsInfo" class="row mt-4">
+    <div class="row">
+      {{ comment.userName }} - Postado em: {{ comment.date }}
+    </div>
+    <div class="row">
+      {{ comment.content }}
+    </div>
+  </div> -->
+
+  <div *ngFor="let comment of movieComments?.commentsInfo" class="card mt-4">
+    <div class="card-header">
+      {{ comment.userName }} - Postado em: {{ comment.date }}
+    </div>
+    <div class="card-body">
+      <p class="card-text">{{ comment.content }}</p>
+    </div>
+  </div>
+</section>

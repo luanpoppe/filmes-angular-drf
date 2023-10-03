@@ -483,26 +483,6 @@
           "video": false,
           "vote_average": 6.438,
           "vote_count": 463
-        },
-        {
-          "adult": false,
-          "backdrop_path": "/oTOKHnJRNmZh4JtuE5GJ2tFVpWW.jpg",
-          "genre_ids": [
-            80,
-            18,
-            53
-          ],
-          "id": 1830,
-          "original_language": "en",
-          "original_title": "Lord of War",
-          "overview": "Yuri Orlov is a globetrotting arms dealer and, through some of the deadliest war zones, he struggles to stay one step ahead of a relentless Interpol agent, his business rivals and even some of his customers who include many of the world's most notorious dictators. Finally, he must also face his own conscience.",
-          "popularity": 26.058,
-          "poster_path": "/3MGQD4yXokufNlW1AyRXdiy7ytP.jpg",
-          "release_date": "2005-09-16",
-          "title": "Lord of War",
-          "video": false,
-          "vote_average": 7.281,
-          "vote_count": 4271
         }
       ],
       "favorites": [
@@ -567,6 +547,63 @@
           "video": false,
           "vote_average": 8.022,
           "vote_count": 46
+        }
+      ]
+    }
+  ],
+  "comentarios": [
+    {
+      "id": 678512,
+      "commentsInfo": [
+        {
+          "userName": "Usuário 5",
+          "date": "02/10/2023",
+          "content": "Comentário do usuário 5 no filme Som da Liberdade"
+        },
+        {
+          "userName": "Usuario 1",
+          "date": "02/10/2023",
+          "content": "Comentário do usuário 1 no filme Som da Liberdade"
+        },
+        {
+          "userName": "Usuário 5",
+          "date": "02/10/2023",
+          "content": "Novo comentário"
+        },
+        {
+          "userName": "Usuário 5",
+          "date": "02/10/2023",
+          "content": "Mais um comentário"
+        }
+      ]
+    },
+    {
+      "id": 121,
+      "commentsInfo": [
+        {
+          "userName": "Usuário 5",
+          "date": "02/10/2023",
+          "content": "Novo Comentário"
+        }
+      ]
+    },
+    {
+      "id": 762430,
+      "commentsInfo": [
+        {
+          "userName": "Usuário 5",
+          "date": "02/10/2023",
+          "content": "Novo comentário"
+        }
+      ]
+    },
+    {
+      "id": 1830,
+      "commentsInfo": [
+        {
+          "userName": "Usuário 5",
+          "date": "02/10/2023",
+          "content": "Novo comentário"
         }
       ]
     }

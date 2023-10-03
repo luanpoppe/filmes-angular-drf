@@ -1,0 +1,24 @@
+@use "../../../utils/colors.scss";
+
+.card {
+  color: colors.$white;
+  background-color: colors.$darkBlue;
+}
+
+.card-header {
+  font-size: 1.2em;
+  border-bottom-color: colors.$orange;
+}
+
+h5 {
+  font-size: 1.5em;
+}
+
+form {
+  margin-bottom: 16px;
+}
+
+app-button-main {
+  margin-top: 16px;
+  margin-bottom: 32px;
+}

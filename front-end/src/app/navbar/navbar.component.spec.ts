@@ -2,7 +2,7 @@ import { ComponentFixture, TestBed } from '@angular/core/testing';
 
 import { NavbarComponent } from './navbar.component';
 
-describe('Layout do NavbarComponent', () => {
+describe('Layout do NavbarComponent - Antes do Login', () => {
   let component: NavbarComponent;
   let fixture: ComponentFixture<NavbarComponent>;
   let navbar: any
@@ -40,3 +40,21 @@ describe('Layout do NavbarComponent', () => {
     expect(div[1].textContent).toBe("Login")
   })
 });
+
+// describe('Layout do NavbarComponent - Após o Login', () => {
+//   let component: NavbarComponent;
+//   let fixture: ComponentFixture<NavbarComponent>;
+//   let navbar: any
+
+//   beforeEach(async () => {
+//     await TestBed.configureTestingModule({
+//       declarations: [ NavbarComponent ]
+//     })
+//     .compileComponents();
+
+//     fixture = TestBed.createComponent(NavbarComponent);
+//     component = fixture.componentInstance;
+//     fixture.detectChanges();
+//     navbar = fixture.nativeElement as HTMLElement
+//   });
+// })

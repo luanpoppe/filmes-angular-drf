@@ -104,6 +104,27 @@
           "video": false,
           "vote_average": 8,
           "vote_count": 503
+        },
+        {
+          "adult": false,
+          "backdrop_path": "/iiXliCeykkzmJ0Eg9RYJ7F2CWSz.jpg",
+          "genre_ids": [
+            28,
+            9648,
+            53,
+            80
+          ],
+          "id": 762430,
+          "original_language": "en",
+          "original_title": "Retribution",
+          "overview": "Com seus filhos presos no banco de trás e uma bomba que explodirá se eles saírem do carro, um trajeto normal se torna um jogo distorcido de vida ou morte enquanto Matt Turner segue as instruções cada vez mais perigosas de um estranho em uma corrida contra o tempo para salvar sua  família.",
+          "popularity": 845.194,
+          "poster_path": "/yd0iEtqAXseXQgKf9RjmMaPjUPG.jpg",
+          "release_date": "2023-08-23",
+          "title": "A Chamada",
+          "video": false,
+          "vote_average": 6.8,
+          "vote_count": 292
         }
       ],
       "favorites": [
@@ -483,6 +504,47 @@
           "video": false,
           "vote_average": 6.438,
           "vote_count": 463
+        },
+        {
+          "adult": false,
+          "backdrop_path": "/jz3hpbDydf7N2El2Katq2zE0DPu.jpg",
+          "genre_ids": [
+            878,
+            28,
+            53
+          ],
+          "id": 670292,
+          "original_language": "en",
+          "original_title": "The Creator",
+          "overview": "Em meio a uma futura guerra entre a raça humana e as forças da inteligência artificial, Joshua, um endurecido ex-agente das forças especiais que lamenta o desaparecimento de sua esposa, é recrutado para caçar e matar o Criador, o indescritível arquiteto da IA avançada que desenvolveu uma arma misteriosa com o poder de acabar com a guerra - e a própria humanidade.",
+          "popularity": 683.208,
+          "poster_path": "/187OBBT5oMQ2XPXgx9F8JhlycvK.jpg",
+          "release_date": "2023-09-27",
+          "title": "Resistência",
+          "video": false,
+          "vote_average": 7.2,
+          "vote_count": 164
+        },
+        {
+          "adult": false,
+          "backdrop_path": "/iiXliCeykkzmJ0Eg9RYJ7F2CWSz.jpg",
+          "genre_ids": [
+            28,
+            9648,
+            53,
+            80
+          ],
+          "id": 762430,
+          "original_language": "en",
+          "original_title": "Retribution",
+          "overview": "Com seus filhos presos no banco de trás e uma bomba que explodirá se eles saírem do carro, um trajeto normal se torna um jogo distorcido de vida ou morte enquanto Matt Turner segue as instruções cada vez mais perigosas de um estranho em uma corrida contra o tempo para salvar sua  família.",
+          "popularity": 1288.533,
+          "poster_path": "/yd0iEtqAXseXQgKf9RjmMaPjUPG.jpg",
+          "release_date": "2023-08-23",
+          "title": "A Chamada",
+          "video": false,
+          "vote_average": 6.8,
+          "vote_count": 277
         }
       ],
       "favorites": [
@@ -547,6 +609,96 @@
           "video": false,
           "vote_average": 8.022,
           "vote_count": 46
+        },
+        {
+          "adult": false,
+          "backdrop_path": "/h0nmmdFAdBjQttN8Y0q825MWzZp.jpg",
+          "genre_ids": [
+            28,
+            53,
+            80
+          ],
+          "id": 926393,
+          "original_language": "en",
+          "original_title": "The Equalizer 3",
+          "overview": "Sentindo-se em casa no sul da Itália, o ex-agente Robert McCall logo descobre que seus novos amigos estão sob o controle dos chefes do crime local.  À medida que os acontecimentos se tornam mortais, McCall sabe o que tem de fazer: tornar-se o protetor dos seus amigos, enfrentando a máfia.",
+          "popularity": 356.859,
+          "poster_path": "/p4Qn2hhKoz8My9ysN1RK223iVM5.jpg",
+          "release_date": "2023-08-30",
+          "title": "O Protetor: Capitulo Final",
+          "video": false,
+          "vote_average": 6.9,
+          "vote_count": 256
+        }
+      ]
+    },
+    {
+      "id": 6,
+      "nome": " Larissa",
+      "email": "larissa@email.com",
+      "password": "123",
+      "watchlist": [
+        {
+          "adult": false,
+          "backdrop_path": "/x2RS3uTcsJJ9IfjNPcgDmukoEcQ.jpg",
+          "genre_ids": [
+            12,
+            14,
+            28
+          ],
+          "id": 120,
+          "original_language": "en",
+          "original_title": "The Lord of the Rings: The Fellowship of the Ring",
+          "overview": "Em uma terra fantástica e única, um hobbit recebe de presente de seu tio um anel mágico e maligno que precisa ser destruído antes que caia nas mãos do mal. Para isso, o hobbit Frodo tem um caminho árduo pela frente, onde encontra perigo, medo e seres bizarros. Ao seu lado para o cumprimento desta jornada, ele aos poucos pode contar com outros hobbits, um elfo, um anão, dois humanos e um mago, totalizando nove pessoas que formam a Sociedade do Anel.",
+          "popularity": 99.762,
+          "poster_path": "/omoMXT3Z7XrQwRZ2OGJGNWbdeEl.jpg",
+          "release_date": "2001-12-18",
+          "title": "O Senhor dos Anéis: A Sociedade do Anel",
+          "video": false,
+          "vote_average": 8.403,
+          "vote_count": 23342
+        },
+        {
+          "adult": false,
+          "backdrop_path": "/zcc0My3G4SYR72VuEYHNcUWkkW0.jpg",
+          "genre_ids": [
+            12,
+            14,
+            28
+          ],
+          "id": 121,
+          "original_language": "en",
+          "original_title": "The Lord of the Rings: The Two Towers",
+          "overview": "Após a captura de Merry e Pippy pelos orcs, a Sociedade do Anel é dissolvida. Frodo e Sam seguem sua jornada rumo à Montanha da Perdição para destruir o anel e descobrem que estão sendo perseguidos pelo misterioso Gollum. Enquanto isso, Aragorn, o elfo e arqueiro Legolas e o anão Gimli partem para resgatar os hobbits sequestrados e chegam ao reino de Rohan, onde o rei Theoden foi vítima de uma maldição mortal de Saruman.",
+          "popularity": 79.643,
+          "poster_path": "/20eUL6eN89SM0U7KPDw8iR82mOT.jpg",
+          "release_date": "2002-12-18",
+          "title": "O Senhor dos Anéis: As Duas Torres",
+          "video": false,
+          "vote_average": 8.385,
+          "vote_count": 20290
+        }
+      ],
+      "favorites": [
+        {
+          "adult": false,
+          "backdrop_path": "/fuo26MkENNfKHQ94mebyKfHNQ8P.jpg",
+          "genre_ids": [
+            18,
+            28,
+            53
+          ],
+          "id": 512731,
+          "original_language": "cn",
+          "original_title": "掃毒2 天地對決",
+          "overview": "Um empresário rico tenta derrubar um chefão das drogas com quem costumava trabalhar, enquanto um policial tenta encontrar justiça sem infringir a lei.",
+          "popularity": 9.542,
+          "poster_path": "/ja9oIIP33Pgm9295Gn67zBz8Vjy.jpg",
+          "release_date": "2019-07-04",
+          "title": "Tempestade branca 2: Senhores do tráfico",
+          "video": false,
+          "vote_average": 6.6,
+          "vote_count": 34
         }
       ]
     }
@@ -604,6 +756,36 @@
           "userName": "Usuário 5",
           "date": "02/10/2023",
           "content": "Novo comentário"
+        }
+      ]
+    },
+    {
+      "id": 670292,
+      "commentsInfo": [
+        {
+          "userName": " Larissa",
+          "date": "02/10/2023",
+          "content": "Filme muito bom!"
+        }
+      ]
+    },
+    {
+      "id": 227359,
+      "commentsInfo": [
+        {
+          "userName": " Larissa",
+          "date": "02/10/2023",
+          "content": "teste"
+        }
+      ]
+    },
+    {
+      "id": 2252,
+      "commentsInfo": [
+        {
+          "userName": " Larissa",
+          "date": "02/10/2023",
+          "content": "Filme muito bom!"
         }
       ]
     }

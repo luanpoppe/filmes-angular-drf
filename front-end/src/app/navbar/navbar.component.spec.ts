@@ -17,7 +17,9 @@ describe('NavbarComponent', () => {
     fixture.detectChanges();
   });
 
-  it('should create', () => {
-    expect(component).toBeTruthy();
+  it('deve ter o nome da empresa', () => {
+    const navbar = fixture.nativeElement as HTMLElement
+    const nomeEmpresa = navbar.querySelector(".navbar-brand h1")
+    expect(nomeEmpresa?.textContent).toBe("Filmes - Solos");
   });
 });

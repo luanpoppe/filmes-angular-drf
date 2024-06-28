@@ -45,7 +45,9 @@ INSTALLED_APPS = [
     "rest_framework",
     "django_filters",
     "corsheaders",
-    "endpoint_teste"
+    "endpoint_teste",
+    "user",
+    "movie"
 ]
 
 MIDDLEWARE = [
@@ -86,7 +88,7 @@ WSGI_APPLICATION = "setup.wsgi.application"
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.postgresql',
-        'NAME': "PostgreSQL 16",
+        'NAME': 'filmes-angular-drf',
         'USER': "postgres",
         'PASSWORD': os.environ['DATABASE_PASSWORD'],
         'HOST': "localhost",

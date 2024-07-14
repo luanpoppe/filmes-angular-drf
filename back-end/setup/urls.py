@@ -15,7 +15,7 @@ router.register("endpoint-teste", EndpointTesteViewSet, basename="Basename do en
 urlpatterns = [
     path("admin/", admin.site.urls),
     path('', include(router.urls)),
-    path('', include("user.urls")),
+    path('user/', include("user.urls")),
     path('api/token/', TokenObtainPairView.as_view(), name='token_obtain_pair'),
     path('api/token/refresh/', TokenRefreshView.as_view(), name='token_refresh'),
 ]

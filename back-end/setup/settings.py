@@ -44,6 +44,7 @@ INSTALLED_APPS = [
     "django.contrib.messages",
     "django.contrib.staticfiles",
     "rest_framework",
+    'rest_framework_simplejwt',
     "django_filters",
     "corsheaders",
     "endpoint_teste",
@@ -89,11 +90,11 @@ WSGI_APPLICATION = "setup.wsgi.application"
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.postgresql',
-        'NAME': 'filmes-angular-drf',
-        'USER': "postgres",
+        'NAME': "postgres",
+        'USER': "postgres.rpbfudxcyiyhbtvyoqlp",
         'PASSWORD': os.environ['DATABASE_PASSWORD'],
-        'HOST': "localhost",
-        'PORT': 5432,
+        'HOST': "aws-0-sa-east-1.pooler.supabase.com",
+        'PORT': 6543,
         # 'OPTIONS': {
         #     'sslmode': 'require',
         # }

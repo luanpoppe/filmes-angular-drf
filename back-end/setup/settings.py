@@ -49,7 +49,9 @@ INSTALLED_APPS = [
     "corsheaders",
     "endpoint_teste",
     "user",
-    "movie"
+    "movie",
+    "movie_user_info",
+    "user_comments",
 ]
 
 MIDDLEWARE = [
